@@ -1,0 +1,7 @@
+class GameScreen{constructor(){this.size=150;this.speed=1;this.speedLimit=9;this.score=0;this.particles=[];this.currScore=document.getElementById("curr-score");this.resize()}
+display(){background('#AE6D95');image(textureLayer,0,0);this.initParticles();this.updateParticles();this.drawCatchBox()}
+drawCatchBox(){push();this.boxX=constrain(mouseX-this.size/2,25,width-this.size-25);this.boxY=height-this.size-25;stroke(255);strokeWeight(10);fill('#762A5956');rect(this.boxX,this.boxY,this.size);resetMatrix();pop()}
+initParticles(){if(frameCount%floor(randomGaussian(20,10))===0){let initialX=random(width);let animal=animals[floor(random(animals.length))];this.particles.push(new Particle(initialX,-30,animal))}}
+updateParticles(){for(let i=this.particles.length-1;i>=0;i--){let particle=this.particles[i];let gravity=createVector(0,0.07*this.speed);particle.applyForce(gravity);particle.update();particle.show();if(particle.checkCollision(this.boxX,this.boxY,this.size)){if(particle.animal===targetAnimal){this.score++;this.updateCurrScore();collectSFX.play();this.particles.splice(i,1)}else{particle.vel.y*=-0.8;this.speed+=0.02}}}}
+updateCurrScore(){this.currScore.innerText=`Caught: ${this.score}`}
+resize(){this.boxX=constrain(mouseX-this.size/2,25,width-this.size-25);this.boxY=height-this.size-25}}

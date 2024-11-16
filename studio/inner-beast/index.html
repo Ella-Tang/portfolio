@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inner Beast</title>
+  <link rel="stylesheet" href="../../studio/style.css">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+  <!-- Opening animation -->
+  <div class="opening-container"><div class="opening-text fade-in">Inner Beast</div></div>
+  <!-- Custom cursor -->
+  <div class="custom-cursor"></div>
+  <!-- Header with navigation -->
+  <header>
+    <a class="cursor-element" href="../../index.html"><h1>Ella Tang</h1></a>
+    <nav class="cursor-element">
+      <a href="../../studio/index.html" class="nav-button active">Studio</a>
+      <a href="../../projects/index.html" class="nav-button inactive">Projects</a>
+      <a href="../../playground/index.html" class="nav-button inactive">Playground</a>
+      <a href="../../about/index.html" class="nav-button inactive">About</a>
+    </nav>
+  </header>
+  <!-- Main container -->
+  <div class="main-container fade-in">
+    <!-- Artwork detail container -->
+    <div class="detail-grid-container">  
+      <div class="gallery-container">
+        <!-- Artwork feature image -->
+        <div class="artwork-image project-image"><img id="featureImage"></div>
+        <!-- Spacer large -->
+        <div class="spacer spacer-lg"></div>
+        <!-- Details -->
+        <div class="studio-artwork-detail-container">
+          <!-- First line with three columns -->
+          <div class="first-row">
+            <div class="column project-number"></div>
+            <div class="column project-date"></div>
+            <div class="column project-title"></div>
+          </div>
+          <!-- Below section with left and right parts -->
+          <div class="content-section">
+            <!-- Left section with two rows (dimension and material) -->
+            <div class="left-section">
+              <div class="row dimension">Dimensions: 24" x 36"</div>
+              <div class="row material project-description"></div>
+            </div>
+            <!-- Right section for project paragraph -->
+            <div class="right-section"><p class="artwork-paragraph"></p></div>
+          </div>
+        </div>
+        <!-- Spacer large -->
+        <div class="spacer spacer-lg"></div>
+        <!-- Image container-->
+        <div class="side-by-side-image-container">
+          <img src="images/inner-beast-2.jpg" alt="Inner Beast Image 2" class="side-by-side-image">
+          <img src="images/inner-beast-3.jpg" alt="Inner Beast Image 3" class="side-by-side-image">
+        </div>
+        <!-- Spacer small -->
+        <div class="spacer spacer-sm"></div>
+        <!-- Image container-->
+        <div class="side-by-side-image-container">
+          <img src="images/inner-beast-4.jpg" alt="Inner Beast Image 4" class="side-by-side-image">
+          <img src="images/inner-beast-5.jpg" alt="Inner Beast Image 5" class="side-by-side-image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scripts-->
+  <script src="../../script.js"></script>
+  <script src="../../studio/script.js"></script>
+</body>
+
+<footer class="footer"><p>An Ella Tang Website</p></footer>
+
+</html>

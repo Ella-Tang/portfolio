@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Potato</title>
+  <link rel="stylesheet" href="../../studio/style.css">
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    #featureImage {
+      height: 80vh;
+      width: auto;
+      max-width: 100%;
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      #featureImage {
+        max-height: 70vh;
+      }
+    }
+    @media (max-width: 480px) {
+      #featureImage {
+        max-height: 60vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Opening animation -->
+  <div class="opening-container"><div class="opening-text fade-in">Sweet Potato</div></div>
+  <!-- Custom cursor -->
+  <div class="custom-cursor"></div>
+  <!-- Header with navigation -->
+  <header>
+    <a class="cursor-element" href="../../index.html"><h1>Ella Tang</h1></a>
+    <nav class="cursor-element">
+      <a href="../../studio/index.html" class="nav-button active">Studio</a>
+      <a href="../../projects/index.html" class="nav-button inactive">Projects</a>
+      <a href="../../playground/index.html" class="nav-button inactive">Playground</a>
+      <a href="../../about/index.html" class="nav-button inactive">About</a>
+    </nav>
+  </header>
+
+  <!-- Main container -->
+  <div class="main-container fade-in">
+    <!-- Artwork detail container -->
+    <div class="artwork-detail-container">  
+      <div class="gallery-container">
+        <!-- Artwork feature image -->
+        <div class="artwork-image project-image"><img id="featureImage" alt="Feature Artwork"></div>    
+        <!-- Spacer large -->
+        <div class="spacer spacer-lg"></div>
+        <!-- Details -->
+        <div class="detail-grid-container">
+          <!-- First line with three columns -->
+          <div class="first-row">
+            <div class="column project-number"></div>
+            <div class="column project-date"></div>
+            <div class="column project-title"></div>
+          </div>
+          <!-- Below section with left and right parts -->
+          <div class="content-section">
+            <!-- Left section with two rows (dimension and material) -->
+            <div class="left-section">
+              <div class="row dimension">Dimensions: 20" x 31.5"</div>
+              <div class="row material project-description"></div>
+            </div>
+            <!-- Right section for project paragraph -->
+            <div class="right-section"><p class="artwork-paragraph"></p></div>
+          </div>
+        </div>
+        <!-- Spacer large -->
+        <div class="spacer spacer-lg"></div>
+         <!-- Image row -->
+        <div class="image-row">
+          <img src="images/sweet-potato-2.jpg" alt="Sweet Potato Image 2" class="image-row-image portrait">
+          <img src="images/sweet-potato-3.jpg" alt="Sweet Potato Image 3" class="image-row-image landscape">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="../../script.js"></script>
+  <script src="../../studio/script.js"></script>
+
+</body>
+
+<footer class="footer"><p>An Ella Tang Website</p></footer>
+
+</html>

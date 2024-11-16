@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Cities</title>
+  <link rel="stylesheet" href="../../studio/style.css">
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .gallery-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .image-container {
+      width: 100%;
+      overflow: hidden;
+    }
+    .gallery-image {
+      width: 100%;
+      object-fit: cover;
+    }
+    .image-caption {
+      margin-top: 10px;
+      font-size: 0.5em;
+      color: #999;
+    }
+    @media (max-width: 768px) {
+      .gallery-item {
+        width: 100%;
+      }
+    }
+    @media (max-width: 480px) {
+      .gallery-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .gallery-item {
+        width: 100%;
+      }
+      .image-caption {
+        font-size: 0.6em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Opening animation -->
+  <div class="opening-container"><div class="opening-text fade-in">Still Life</div></div>
+  <!-- Custom cursor -->
+  <div class="custom-cursor"></div>
+  <!-- Header with navigation -->
+  <header>
+    <a class="cursor-element" href="../../index.html"><h1>Ella Tang</h1></a>
+    <nav class="cursor-element">
+      <a href="../../studio/index.html" class="nav-button active">Studio</a>
+      <a href="../../projects/index.html" class="nav-button inactive">Projects</a>
+      <a href="../../playground/index.html" class="nav-button inactive">Playground</a>
+      <a href="../../about/index.html" class="nav-button inactive">About</a>
+    </nav>
+  </header>
+
+  <!-- Main container -->
+  <div class="main-container fade-in">
+    <!-- Artwork detail container -->
+    <div class="artwork-detail-container">
+      <div class="gallery-container">
+        <!-- Details -->
+        <div class="detail-grid-container">
+          <!-- First line with three columns -->
+          <div class="first-row">
+            <div class="column project-number"></div>
+            <div class="column project-date"></div>
+            <div class="column project-title"></div>
+          </div>
+          <!-- Below section with left and right parts -->
+          <div class="content-section">
+            <!-- Left section with two rows (dimension and material) -->
+            <div class="left-section">
+              <div class="row dimension">Dimensions: variable</div>
+              <div class="row material project-description"></div>
+            </div>
+            <!-- Right section for project paragraph -->
+            <div class="right-section">
+              <p class="artwork-paragraph"></p>
+            </div>
+          </div>
+        </div>
+        <!-- Spacer large -->
+        <div class="spacer spacer-lg"></div>
+        <div class="spacer spacer-lg"></div>
+        <!-- Images -->
+        <div class="gallery">
+          <!-- Shanghai Images Row -->
+          <div class="gallery-row">
+            <div class="gallery-item">
+              <div class="image-container"><img src="images/sh-1.jpg" alt="Shanghai Image 1" class="gallery-image landscape"></div>
+              <span class="image-caption">Shanghai #1, 2018, engraving prints, 7.87" x 5/9"</span>
+            </div>
+            <div class="gallery-item">
+              <div class="image-container"><img src="images/sh-2.jpg" alt="Shanghai Image 2" class="gallery-image landscape"></div>
+              <span class="image-caption">Shanghai #2, 2018, engraving prints, 7.87" x 5/9"</span>
+            </div>
+            <div class="gallery-item">
+              <div class="image-container"><img src="images/sh-3.jpg" alt="Shanghai Image 3" class="gallery-image landscape"></div>
+              <span class="image-caption">Shanghai #3, 2018, engraving prints, 7.87" x 5/9"</span>
+            </div>
+          </div>
+          <!-- New York City Images Row -->
+          <div class="gallery-row">
+            <div class="gallery-item">
+              <div class="image-container"><img src="images/ny-1.jpg" alt="New York City Image 1" class="gallery-image landscape"></div>
+              <span class="image-caption">New York City #1, 2017, engraving prints, 7.87" x 7.87"</span>
+            </div>
+            <div class="gallery-item">
+              <div class="image-container"><img src="images/ny-2.jpg" alt="New York City Image 2" class="gallery-image landscape"></div>
+              <span class="image-caption">New York City #2, 2017, engraving prints, 7.87" x 7.87"</span>
+            </div>
+            <div class="gallery-item">
+              <div class="image-container"><img src="images/ny-3.jpg" alt="New York City Image 3" class="gallery-image landscape"></div>
+              <span class="image-caption">New York City #3, 2017, engraving prints, 7.87" x 7.87"</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="../../script.js"></script>
+  <script src="../../studio/script.js"></script>
+</body>
+
+<footer class="footer"><p>An Ella Tang Website</p></footer>
+
+</html>

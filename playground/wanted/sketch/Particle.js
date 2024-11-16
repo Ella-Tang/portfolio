@@ -1,0 +1,7 @@
+class Particle{constructor(x,y,animal){this.pos=createVector(x,y);this.vel=p5.Vector.random2D();this.vel.mult(random(1,4));this.acc=createVector(0,random(0.05,0.2));const baseScale=min(windowWidth,windowHeight)/500;this.scale=random(1.5,2.5)*baseScale;this.r=20*this.scale;this.mass=1;this.lifetime=1000;this.animal=animal;this.scale=random(1.5,2);this.rotation=random(PI);this.rotationSpeed=random(-0.03,0.06)}
+finished(){return this.lifetime<0}
+applyForce(force){this.acc.add(force)}
+update(){this.vel.add(this.acc);this.pos.add(this.vel);if(this.pos.x<=0+this.r||this.pos.x>=width-this.r){this.vel.x*=-0.07}
+this.rotation+=this.rotationSpeed;this.acc.set(0,0);this.lifetime-=5}
+show(){push();translate(this.pos.x,this.pos.y);rotate(this.rotation);textFont('Sans Serif');textSize(80*this.scale);textAlign(CENTER,CENTER);fill(255,this.lifetime);text(this.animal,0,0);pop()}
+checkCollision(boxX,boxY,boxSize){let particleL=this.pos.x-this.r-5;let particleR=this.pos.x+this.r+5;let particleT=this.pos.y-this.r-5;let particleB=this.pos.y+this.r+5;let boxR=boxX+boxSize;let boxB=boxY+boxSize;let insideX=particleR>=boxX&&particleL<=boxR;let insideY=particleB>=boxY&&particleT<=boxB;return insideX&&insideY}}
