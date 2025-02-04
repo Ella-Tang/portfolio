@@ -1,1 +1,111 @@
-function _0x2518(){const _0x5c767b=['171586fatlgy','none','No\x20description\x20available.','.project-date','artwork-hover-active','split','forEach','.filters\x20button','load','6499872DXllnH','location','remove','1933266aVPOYQ','matches','mousemove','style','visible','display','date','782047EPDmvb','data-category','212975RhCehx','length','.artwork-paragraph','.opening-container','getElementById','projects','classList','.project-title','textContent','.project-description','Additional\x20details\x20will\x20be\x20added\x20soon.','mouseleave','description','DOMContentLoaded','.artwork-image\x20img','54fuaNfW','querySelector','Ella\x20Tang','mouseenter','44uCtowh','.main-container','getAttribute','.fade-in,\x20.fade-in-up,\x20.fade-in-down,\x20.fade-in-left,\x20.fade-in-right','includes','top','paragraph','left','matchMedia','title','animation','88DNmDAZ','clientX','2opMWZs','artworkGrid','add','pathname','all','playground','active','link','src','.opening-container\x20.fade-in','addEventListener','inactive','querySelectorAll','innerText','(hover:\x20hover)\x20and\x20(pointer:\x20fine)','substring','indexOf','<\x20佳\x20韵\x20/>','.custom-cursor','1354310lEiyJT','toLowerCase','alt','988832GDagpN','hovering'];_0x2518=function(){return _0x5c767b;};return _0x2518();}function _0x4f7a(_0x19494d,_0x367f46){const _0x25188c=_0x2518();return _0x4f7a=function(_0x4f7ae0,_0x4dff9e){_0x4f7ae0=_0x4f7ae0-0x18c;let _0x50a675=_0x25188c[_0x4f7ae0];return _0x50a675;},_0x4f7a(_0x19494d,_0x367f46);}const _0x50cf5f=_0x4f7a;(function(_0x4bbec1,_0x398292){const _0x5ebf8c=_0x4f7a,_0x1e2892=_0x4bbec1();while(!![]){try{const _0x2aa59f=-parseInt(_0x5ebf8c(0x1ca))/0x1*(parseInt(_0x5ebf8c(0x1b2))/0x2)+-parseInt(_0x5ebf8c(0x1d6))/0x3+-parseInt(_0x5ebf8c(0x1b0))/0x4*(-parseInt(_0x5ebf8c(0x192))/0x5)+parseInt(_0x5ebf8c(0x1a1))/0x6*(-parseInt(_0x5ebf8c(0x190))/0x7)+parseInt(_0x5ebf8c(0x1c8))/0x8+parseInt(_0x5ebf8c(0x1d3))/0x9+parseInt(_0x5ebf8c(0x1c5))/0xa*(parseInt(_0x5ebf8c(0x1a5))/0xb);if(_0x2aa59f===_0x398292)break;else _0x1e2892['push'](_0x1e2892['shift']());}catch(_0x141611){_0x1e2892['push'](_0x1e2892['shift']());}}}(_0x2518,0x7ad59));const isStudioPage=window[_0x50cf5f(0x1d4)][_0x50cf5f(0x1b5)][_0x50cf5f(0x1a9)]('studio'),isProjectsPage=window[_0x50cf5f(0x1d4)][_0x50cf5f(0x1b5)][_0x50cf5f(0x1a9)](_0x50cf5f(0x197)),isPlaygroundPage=window[_0x50cf5f(0x1d4)][_0x50cf5f(0x1b5)][_0x50cf5f(0x1a9)](_0x50cf5f(0x1b7)),isAboutPage=window['location'][_0x50cf5f(0x1b5)][_0x50cf5f(0x1a9)]('about');document['addEventListener'](_0x50cf5f(0x19f),function(){setupCustomCursor(),typeHeaderText();if(isStudioPage)renderProjectDetails(artworks);else{if(isProjectsPage)renderProjectDetails(projects);else isPlaygroundPage&&renderProjectDetails(items);}});function setupCustomCursor(){const _0x2658fa=_0x50cf5f;if(window[_0x2658fa(0x1ad)](_0x2658fa(0x1c0))[_0x2658fa(0x1d7)]){const _0x2c81f1=document[_0x2658fa(0x1a2)](_0x2658fa(0x1c4)),_0x5cd285=document['querySelectorAll']('.cursor-element'),_0x10bc70=document[_0x2658fa(0x196)](_0x2658fa(0x1b3));document[_0x2658fa(0x1bc)](_0x2658fa(0x1d8),function(_0x5ae96e){const _0x5c85b3=_0x2658fa;_0x2c81f1[_0x5c85b3(0x18c)][_0x5c85b3(0x1aa)]=_0x5ae96e['clientY']+'px',_0x2c81f1[_0x5c85b3(0x18c)][_0x5c85b3(0x1ac)]=_0x5ae96e[_0x5c85b3(0x1b1)]+'px';}),_0x5cd285[_0x2658fa(0x1d0)](function(_0x4882ec){const _0xb8e42b=_0x2658fa;_0x4882ec[_0xb8e42b(0x1bc)](_0xb8e42b(0x1a4),function(){const _0x3e3806=_0xb8e42b;_0x2c81f1['classList'][_0x3e3806(0x1b4)]('hovering');}),_0x4882ec['addEventListener'](_0xb8e42b(0x19d),function(){const _0x13ba61=_0xb8e42b;_0x2c81f1['classList'][_0x13ba61(0x1d5)](_0x13ba61(0x1c9));});}),isStudioPage&&_0x10bc70&&(_0x10bc70['addEventListener'](_0x2658fa(0x1a4),function(){const _0x24640d=_0x2658fa;_0x2c81f1[_0x24640d(0x198)][_0x24640d(0x1b4)](_0x24640d(0x1ce));}),_0x10bc70[_0x2658fa(0x1bc)]('mouseleave',function(){const _0x577423=_0x2658fa;_0x2c81f1['classList']['remove'](_0x577423(0x1ce));}));}else{const _0x1b024a=document['querySelector'](_0x2658fa(0x1c4));_0x1b024a&&(_0x1b024a[_0x2658fa(0x18c)][_0x2658fa(0x18e)]='none');}}function typeHeaderText(){const _0x383e57=_0x50cf5f,_0x464737=document[_0x383e57(0x1a2)]('header\x20a\x20h1'),_0x3ef47b=[_0x383e57(0x1a3),_0x383e57(0x1c3)];let _0x52dd19=0x0,_0x49d7cd=0x0,_0x3d2da4=![];function _0x34e5b6(){const _0x5dfc55=_0x383e57,_0x30eec3=_0x3ef47b[_0x52dd19];_0x464737['textContent']=_0x30eec3[_0x5dfc55(0x1c1)](0x0,_0x49d7cd);if(!_0x3d2da4&&_0x49d7cd<_0x30eec3['length'])_0x49d7cd++;else{if(_0x3d2da4&&_0x49d7cd>0x0)_0x49d7cd--;else{_0x3d2da4=!_0x3d2da4;if(!_0x3d2da4)_0x52dd19=(_0x52dd19+0x1)%_0x3ef47b[_0x5dfc55(0x193)];setTimeout(_0x34e5b6,_0x3d2da4?0x5dc:0x3e8);return;}}setTimeout(_0x34e5b6,_0x3d2da4?0x96:0xc8);}_0x34e5b6();}window['addEventListener'](_0x50cf5f(0x1d2),function(){const _0x10f243=_0x50cf5f;document[_0x10f243(0x1a2)](_0x10f243(0x1bb))[_0x10f243(0x198)][_0x10f243(0x1b4)](_0x10f243(0x18d)),setTimeout(function(){const _0x3b9e34=_0x10f243,_0x5eb6d9=document[_0x3b9e34(0x1a2)]('.opening-container');_0x5eb6d9[_0x3b9e34(0x18c)][_0x3b9e34(0x1af)]='slideUp\x201.5s\x20ease\x20forwards',setTimeout(function(){const _0x27b9f2=_0x3b9e34;document[_0x27b9f2(0x1a2)](_0x27b9f2(0x195))[_0x27b9f2(0x18c)]['display']='none',document[_0x27b9f2(0x1a2)]('.main-container')['classList']['remove']('hidden');const _0x5ac216=document[_0x27b9f2(0x1be)](_0x27b9f2(0x1a8));_0x5ac216[_0x27b9f2(0x1d0)](function(_0x28e22d){const _0x4e8b67=_0x27b9f2;_0x28e22d[_0x4e8b67(0x198)][_0x4e8b67(0x1b4)](_0x4e8b67(0x18d));}),_0x5eb6d9['style'][_0x27b9f2(0x18e)]=_0x27b9f2(0x1cb),document['querySelector'](_0x27b9f2(0x1a6))[_0x27b9f2(0x198)]['remove']('hidden');},0x3e8);},0x3e8);});function updateFilterBtn(_0x2a5585){const _0x6d1a57=_0x50cf5f,_0x13a627=document['querySelectorAll'](_0x6d1a57(0x1d1));_0x13a627['forEach'](function(_0x2362e5){const _0x4439ec=_0x6d1a57,_0x5cffd8=_0x2362e5[_0x4439ec(0x1a7)](_0x4439ec(0x191))||_0x2362e5[_0x4439ec(0x1bf)][_0x4439ec(0x1c6)]();_0x2a5585===_0x4439ec(0x1b6)&&_0x5cffd8==='all'||_0x5cffd8===_0x2a5585?(_0x2362e5[_0x4439ec(0x198)][_0x4439ec(0x1b4)]('active'),_0x2362e5[_0x4439ec(0x198)][_0x4439ec(0x1d5)](_0x4439ec(0x1bd))):(_0x2362e5[_0x4439ec(0x198)]['remove'](_0x4439ec(0x1b8)),_0x2362e5[_0x4439ec(0x198)][_0x4439ec(0x1b4)](_0x4439ec(0x1bd)));});}function renderProjectDetails(_0x554a06){const _0x5ab246=_0x50cf5f,_0x13d8b8=window[_0x5ab246(0x1d4)]['pathname'][_0x5ab246(0x1cf)]('/'),_0x358970=_0x13d8b8[_0x13d8b8[_0x5ab246(0x193)]-0x2],_0x5abe67=_0x554a06['find'](_0x1ca2b7=>_0x1ca2b7[_0x5ab246(0x1b9)][_0x5ab246(0x1a9)](_0x358970));if(_0x5abe67){const _0x4ac023=document[_0x5ab246(0x1a2)](_0x5ab246(0x199)),_0x4f92ff=document[_0x5ab246(0x1a2)](_0x5ab246(0x1cd)),_0x34edf7=document[_0x5ab246(0x1a2)](_0x5ab246(0x19b)),_0x28abd0=document['querySelector'](_0x5ab246(0x1a0)),_0xebdb25=document[_0x5ab246(0x1a2)](_0x5ab246(0x194)),_0x31fb67=document[_0x5ab246(0x1a2)]('.project-number');if(_0x4ac023)_0x4ac023[_0x5ab246(0x19a)]=_0x5abe67['title'];if(_0x4f92ff)_0x4f92ff[_0x5ab246(0x19a)]=_0x5abe67[_0x5ab246(0x18f)];if(_0x34edf7)_0x34edf7[_0x5ab246(0x19a)]=_0x5abe67[_0x5ab246(0x19e)]||_0x5ab246(0x1cc);_0x28abd0&&(_0x28abd0[_0x5ab246(0x1ba)]=_0x5abe67['image'],_0x28abd0[_0x5ab246(0x1c7)]=_0x5abe67[_0x5ab246(0x1ae)]);if(_0xebdb25)_0xebdb25['innerHTML']=_0x5abe67[_0x5ab246(0x1ab)]||_0x5ab246(0x19c);if(_0x31fb67)_0x31fb67['textContent']='00'+(_0x554a06[_0x5ab246(0x1c2)](_0x5abe67)+0x1);}}
+const isStudioPage = window.location.pathname.includes("studio");
+const isProjectsPage = window.location.pathname.includes("projects");
+const isPlaygroundPage = window.location.pathname.includes("playground");
+const isAboutPage = window.location.pathname.includes("about");
+
+document.addEventListener("DOMContentLoaded", function () {
+  setupCustomCursor();
+  typeHeaderText();
+  if (isStudioPage) { renderProjectDetails(artworks); } 
+  else if(isProjectsPage) { renderProjectDetails(projects); } 
+  else if(isPlaygroundPage) { renderProjectDetails(items); }
+});
+
+// Opening fade in effect on page load
+window.addEventListener('load', function () {
+  document.querySelector('.opening-container .fade-in').classList.add('visible');
+  setTimeout(function () {
+    const openingContainer = document.querySelector('.opening-container');
+    openingContainer.style.animation = 'slideUp 0.25s ease forwards'; 
+    setTimeout(function() {
+      openingContainer.style.display = 'none';
+      const mainContainer = document.querySelector('.main-container');
+      mainContainer.classList.remove('hidden');
+      const fadeInEl = document.querySelectorAll(".fade-in, .fade-in-up, .fade-in-down, .fade-in-left, .fade-in-right");
+      for (let i = 0; i < fadeInEl.length; i++) { fadeInEl[i].classList.add("visible"); }
+    }, 300);
+}, 400); 
+});
+
+// Custom cursor
+function setupCustomCursor() {
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    const cursor = document.querySelector('.custom-cursor');
+    const cursorElements = document.querySelectorAll('.cursor-element');
+    const artworkGrid = document.getElementById('artworkGrid');
+    document.addEventListener('mousemove', function (e) {
+      cursor.style.top = e.clientY + 'px';
+      cursor.style.left = e.clientX + 'px';
+    });
+    cursorElements.forEach(function (e) {
+      e.addEventListener('mouseenter', function () { cursor.classList.add('hovering'); });
+      e.addEventListener('mouseleave', function () { cursor.classList.remove('hovering'); });
+    });
+    if (isStudioPage && artworkGrid) {
+      artworkGrid.addEventListener('mouseenter', function () { cursor.classList.add('artwork-hover-active'); });
+      artworkGrid.addEventListener('mouseleave', function () { cursor.classList.remove('artwork-hover-active'); });
+    }
+  } else { 
+    if (document.querySelector('.custom-cursor')) { cursor.style.display = 'none'; }
+  }
+}
+
+// Typing effect in header
+function typeHeaderText() {
+  const headerText = document.querySelector('header a h1');
+  const texts = ['Ella Tang', '< 佳 韵 />'];
+  let currTextIdx = 0, idx = 0, isDeleting = false;
+  function typeEffect() {
+    const curr = texts[currTextIdx];
+    headerText.textContent = curr.substring(0, idx);
+    if (!isDeleting && idx < curr.length) { idx++; } 
+    else if (isDeleting && idx > 0) { idx--; } 
+    else {
+      isDeleting = !isDeleting;
+      if (!isDeleting) currTextIdx = (currTextIdx + 1) % texts.length;
+      setTimeout(typeEffect, isDeleting ? 1500 : 1000);
+      return;
+    }
+    setTimeout(typeEffect, isDeleting ? 150 : 200);
+  }
+  typeEffect();
+}
+
+// Update button active/inactive styles
+function updateFilterBtn(category) {
+  const buttons = document.querySelectorAll('.filters button');
+  buttons.forEach(function(button) {
+    const buttonCategory = button.getAttribute('data-category') || button.innerText.toLowerCase();
+    if (category === 'all' && buttonCategory === 'all' || buttonCategory === category) {
+      button.classList.add('active');
+      button.classList.remove('inactive');
+    } else {
+      button.classList.remove('active');
+      button.classList.add('inactive');
+    }
+  });
+}
+
+// Artwork detail
+function renderProjectDetails(dataArray) {
+  const urlParts = window.location.pathname.split('/');
+  const projectIdentifier = urlParts[urlParts.length - 2];
+  const project = dataArray.find(item => item.link.includes(projectIdentifier));
+  if (project) {
+    const titleEl = document.querySelector('.project-title');
+    const dateEl = document.querySelector('.project-date');
+    const descriptionEl = document.querySelector('.project-description');
+    const imageEl = document.querySelector('.artwork-image img');
+    const paragraphEl = document.querySelector('.artwork-paragraph');
+    const numberEl = document.querySelector('.project-number');
+    if (titleEl) titleEl.textContent = project.title;
+    if (dateEl) dateEl.textContent = project.date;
+    if (descriptionEl) descriptionEl.textContent = project.description || "No description available.";
+    if (imageEl) {
+      imageEl.src = project.image;
+      imageEl.alt = project.title;
+    }
+    if (paragraphEl) paragraphEl.innerHTML = project.paragraph || "Additional details will be added soon.";
+    if (numberEl) numberEl.textContent = `00${dataArray.indexOf(project) + 1}`; 
+  }
+}

@@ -164,6 +164,10 @@
       max-width: 600px; 
       max-height: 600px; 
     }
+    .sketch-fade-in {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
     @media (max-width: 768px) {
       canvas {
         width: 60vw;
@@ -211,16 +215,10 @@
 </head>
 
 <body>  
-  <!-- Gooey Effect SVG for Blobs -->
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
-    <defs>
-      <filter id="goo">
-        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-      </filter>
-    </defs>
-  </svg>
+  <!-- Button Gooey Effect -->
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;"><defs><filter id="goo"><feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur><feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix><feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend></filter></defs></svg>
+  <!-- Opening animation -->
+  <div class="opening-container"><div class="fade-in"></div></div>
   <!-- Custom cursor -->
   <div class="custom-cursor"></div>
   <!-- Header with navigation -->
@@ -230,7 +228,7 @@
   <!-- Main content -->
   <main class="main-container">
     <!-- p5.js Sketch -->
-    <div class="fade-in" id="sketch-container"></div>
+    <div class="sketch-fade-in" id="sketch-container"></div>
     <!-- Blob Buttons -->
     <nav>
       <div class="button-container">

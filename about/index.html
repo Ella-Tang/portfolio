@@ -1,253 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="stylesheet" href="../style.css">
   <style>
-    /* Main content container */
+  /* Main content container */
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
+    max-width: 80%;
+    margin: auto;
+    gap: 5em;
+  }
+  /* Profile photo */
+  .profile-photo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  /* Text section */
+  .about {
+    flex: 2;
+    min-width: 300px;
+  }
+  .about h1 {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 2em;
+    color: #999;
+  }
+  .about p {
+    text-align: left;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-top: 1em;
+  }
+  /* Contact section */
+  .contact-container {
+    flex: 0;
+    align-self: flex-start;
+    margin-left: auto;
+    padding: 1em;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  .contact, .follow {
+    padding-bottom: 4em;
+  }
+  .contact h2, .follow h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 2em;
+    color: #999;
+  }
+  .contact p, .follow p {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  /* Follow link (hovered) */
+  .follow p {
+    padding: 0.2em 0;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  .follow p:hover {
+    color: #999;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+  }
+  /* General link */
+  a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: none;
+  }
+  @media (max-width: 768px) {
     .about-container {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 3em;
-        max-width: 80%;
-        margin: auto;
-        gap: 5em;
+      flex-direction: column;
+      padding: 2em;
+      gap: 1em;
     }
-    /* Profile photo */
     .profile-photo {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        margin-bottom: 1em;
-    }
-    /* Text section */
-    .about {
-        flex: 2;
-        min-width: 300px;
+      max-width: 100%;
+      margin: 0 auto 1.5em auto;
     }
     .about h1 {
-        text-align: left;
-        font-size: 1.2em;
-        font-weight: 400;
-        margin-bottom: 2em;
-        color: #999;
+      font-size: 1.5em;
     }
     .about p {
-        text-align: left;
-        font-size: 1em;
-        font-weight: 300;
-        line-height: 1.6;
-        max-width: 600px;
-        margin-top: 1em;
+      font-size: 1em;
+      max-width: 100%;
+      margin: 0 auto 1.5em auto;
     }
-    /* Contact section */
     .contact-container {
-        flex: 0;
-        align-self: flex-start; 
-        margin-left: auto;
-        padding: 1em;
-        border: 2px solid #333;
-        border-radius: 10px;
-        box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 9em;
+      padding: 1em;
+      border: 2px solid #333;
+      border-radius: 10px;
+      width: 100%;
+      margin: 0 auto 1.5em auto;
     }
     .contact, .follow {
-        padding-bottom: 4em;
+      flex: 1;
+      padding: 0;
     }
     .contact h2, .follow h2 {
-        font-size: 1.2em;
-        font-weight: 400;
-        margin-bottom: 2em;
-        color: #999;
+      font-size: 1em;
+      margin-bottom: 0.5em;
+      padding: 0.1em;
+      border-bottom: 2px solid #333;
     }
     .contact p, .follow p {
-        font-size: 1em;
-        line-height: 1.4;
-    }
-    /* Follow link (hovered) */
-    .follow p {
-        padding: 0.2em 0; 
-        border-top: 2px solid transparent;
-        border-bottom: 2px solid transparent;
-        transition: color 0.3s, border-color 0.3s;
+      font-size: 0.9em;
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid transparent;
     }
     .follow p:hover {
-        color: #999;
-        border-top: 2px solid #333;
-        border-bottom: 2px solid #333;
+      color: #999;
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid transparent;
     }
-    /* General link */
-    a {
-        color: #333;
-        text-decoration: none;
-        transition: color 0.3s;
-        cursor: none;
+  }
+  @media (max-width: 480px) {
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+      max-width: 80%;
+      margin: auto;
+      gap: 2em;
     }
-    @media (max-width: 768px) {
-        .about-container {
-            flex-direction: column;
-            padding: 2em;
-            gap: 1em;
-        }
-        .profile-photo {
-            max-width: 100%;
-            margin: 0 auto 1.5em auto; 
-        }
-        .about h1 {
-            font-size: 1.5em;
-        }
-        .about p {
-            font-size: 1em;
-            max-width: 100%;
-            margin: 0 auto 1.5em auto; 
-        }
-        .contact-container {
-            display: flex;
-            flex-direction: row; 
-            justify-content: space-between;
-            gap: 9em;
-            padding: 1em;
-            border: 2px solid #333;
-            border-radius: 10px;
-            width: 100%;
-            margin: 0 auto 1.5em auto;
-        }
-        .contact, .follow {
-            flex: 1; 
-            padding: 0; 
-        }
-        .contact h2, .follow h2 {
-            font-size: 1em;
-            margin-bottom: 0.5em;
-            padding: 0.1em;
-            border-bottom: 2px solid #333;
-        }
-        .contact p, .follow p {
-            font-size: 0.9em;
-            border-top: 2px solid transparent;
-            border-bottom: 2px solid transparent;
-        }
-        .follow p:hover {
-            color: #999;
-            border-top: 2px solid transparent;
-            border-bottom: 2px solid transparent;
-        }
+    .about {
+      text-align: center;
     }
-    @media (max-width: 480px) {
-      .about-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center; 
-        padding: 1em;
-        max-width: 80%;
-        margin: auto;
-        gap: 2em;
-      }
-      .about {
-          text-align: center;
-      }
-      .contact-container {
-          text-align: center;
-      }
-        .profile-photo {
-          max-width: 100%;
-          height: auto;
-          margin: 0 auto 1.5em auto;
-      }
-      .about h1 {
-          font-size: 1.2em;
-      }
-      .about p {
-          font-size: 1em;
-          line-height: 1.4;
-          text-align: justify;
-      }
-      .contact-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between; 
-          box-sizing: border-box;
-          gap: 1em; 
-          padding: 1em;
-          border: 2px solid #333;
-          border-radius: 10px;
-          margin: 1.5em auto;
-          width: 100%;
-      }
-      .contact, .follow {
-          flex: 1;
-          padding: 0; 
-          text-align: left;
-      }
-      .contact h2, .follow h2 {
-          font-size: 1em;
-          margin-bottom: 0.5em;
-      }
-      .contact p, .follow p {
-          font-size: 1em;
-          line-height: 1.4;
-          margin: 0.5em 0;
-      }
-      .follow p {
-          padding: 0.5em 0;
-          border: none;
-      }
+    .contact-container {
+      text-align: center;
     }
-        
+    .profile-photo {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 1.5em auto;
+    }
+    .about h1 {
+      font-size: 1.2em;
+    }
+    .about p {
+      font-size: 1em;
+      line-height: 1.4;
+      text-align: justify;
+    }
+    .contact-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      box-sizing: border-box;
+      gap: 1em;
+      padding: 1em;
+      border: 2px solid #333;
+      border-radius: 10px;
+      margin: 1.5em auto;
+      width: 100%;
+    }
+    .contact, .follow {
+      flex: 1;
+      padding: 0;
+      text-align: left;
+    }
+    .contact h2, .follow h2 {
+      font-size: 1em;
+      margin-bottom: 0.5em;
+    }
+    .contact p, .follow p {
+      font-size: 1em;
+      line-height: 1.4;
+      margin: 0.5em 0;
+    }
+    .follow p {
+      padding: 0.5em 0;
+      border: none;
+    }
+  }
   </style>
 </head>
 
 <body>
+  <!-- Opening animation -->
+  <div class="opening-container"><div class="fade-in"></div></div>
   <!-- Custom cursor -->
   <div class="custom-cursor"></div>
   <!-- Header with navigation -->
   <header>
     <a class="cursor-element" href="../index.html"><h1>Ella Tang</h1></a>
-    <nav>
-      <a href="../studio/index.html" class="nav-button inactive cursor-element">Studio</a>
-      <a href="../projects/index.html" class="nav-button inactive cursor-element">Projects</a>
-      <a href="../playground/index.html" class="nav-button inactive cursor-element">Playground</a>
-      <a href="../about/index.html" class="nav-button active cursor-element">About</a>
-    </nav>
+      <nav>
+        <a href="../studio/index.html" class="nav-button inactive cursor-element">Studio</a>
+        <a href="../projects/index.html" class="nav-button inactive cursor-element">Projects</a>
+        <a href="../playground/index.html" class="nav-button inactive cursor-element">Playground</a>
+        <a href="../about/index.html" class="nav-button active cursor-element">About</a>
+      </nav>
   </header>
   <!-- Main content -->
   <div class="main-container">
     <!-- About section -->
-    <div class="about-container fade-in">
+     <div class="about-container fade-in">
       <!-- Left section with text content -->
       <section class="about">
         <h1>About</h1>
         <!-- Profile Photo -->
         <img src="../about/photo.jpg" alt="Ella Tang" class="profile-photo">
         <!-- Description -->
-        <p>Hello! I’m Ella Tang, an artist and programmer based in New York. 
-          I'm currently a fourth-year undergraduate student at NYU Tisch School of the Arts, 
-          majoring in Interactive Media Arts. With a fine art background, 
-          I initially express ideas through traditional mediums, such as painting, drawing, and sculpture. 
-          In recent years, I’ve shifted focus towards creative coding, physical computing, and immersive experiences.</p>
-      </section>
-      <!-- Contact section -->
-      <section class="contact-container">
-        <div class="contact">
-          <h2>Contact</h2>
-          <p>jt3908@nyu.edu</a></p>
-        </div>
-        <div class="follow">
-          <h2>Follow</h2>
-          <p class="cursor-element"><a href="https://www.instagram.com/ellaaaaaaatang/" target="_blank">Instagram</a></p>
-          <p class="cursor-element"><a href="https://www.linkedin.com/in/ella-tang-a08274273/" target="_blank">LinkedIn</a></p>
-          <p class="cursor-element"><a href="https://github.com/Ella-Tang" target="_blank">GitHub</a></p>
-        </div>
-      </section>
-    </div>
+        <p>Hello! I’m Ella Tang, a creative technologist based in New York.
+           I'm currently a fourth-year undergraduate student at NYU Tisch School of the Arts, majoring in Interactive Media Arts.
+           This website is a work of mine, curating my recent works in three digital spaces: Studio, Projects, Playground. 
+        </p>
+        <!-- Contact section -->
+        <section class="contact-container">
+          <div class="contact">
+            <h2>Contact</h2>
+            <p>jt3908@nyu.edu</a></p>
+          </div>
+          <div class="follow">
+            <h2>Follow</h2>
+            <p class="cursor-element"><a href="https://www.instagram.com/ellaaaaaaatang/" target="_blank">Instagram</a></p>
+            <p class="cursor-element"><a href="https://www.linkedin.com/in/ella-tang-a08274273/" target="_blank">LinkedIn</a></p>
+            <p class="cursor-element"><a href="https://github.com/Ella-Tang" target="_blank">GitHub</a></p>
+          </div>
+        </section>
+      </div>
   </div>
   <!-- Script -->
   <script src="../script.js"></script>
 </body>
 
-<footer class="footer"><p>An Ella Tang Website</p></footer>
+<footer class="footer">
+  <p>An Ella Tang Website</p>
+</footer>
 
 </html>

@@ -1,40 +1,3 @@
-/* ----------- Opening Animation ----------- */
-/* Opening container */
-.opening-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #111;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  transition: transform 1.5s ease;
-  font-family: "Funnel Display", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-/* Slide up animation */
-@keyframes slideUp {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-}
-/* Opening animation text */
-.opening-text {
-  font-size: 1.1em;
-  color: #fff;
-}
-
 /* ----------- Fade-in ----------- */
 .fade-in {
   opacity: 0;
@@ -47,13 +10,10 @@
 .fade-in-right { transform: translateX(30px); }
 
 /* animation effect when the element becomes visible */
-.fade-in.visible,
-.fade-in-up.visible,
-.fade-in-down.visible,
-.fade-in-left.visible,
-.fade-in-right.visible {
-    opacity: 1;
-    transform: translate(0, 0); 
+.fade-in.visible, .fade-in-up.visible,
+.fade-in-down.visible, .fade-in-left.visible, .fade-in-right.visible {
+  opacity: 1;
+  transform: translate(0, 0); 
 }
 
 /* ----------- Cursor ----------- */
@@ -79,9 +39,7 @@
   height: 20px;
 }
 @media (hover: none) and (pointer: coarse) {
-  .custom-cursor {
-    display: none;
-  }
+  .custom-cursor { display: none; }
 }
 
 /* ----------- Selected text ----------- */
