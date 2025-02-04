@@ -2,7 +2,6 @@ let circleAngForward = 0, circleAngBackward = 0;
 let ang, sound, amplitude;
 let volume = 0;
 let fadeInComplete = false;
-let userInteracted = false;
 
 function preload() {
   sound = loadSound('sketch/AstralAscension.mp3');
@@ -12,12 +11,15 @@ function setup() {
   let canvas = createCanvas(windowHeight, windowHeight);
   canvas.parent("sketch-container");
 
-  // Show prompt for interaction
-  textAlign(CENTER, CENTER);
-  textSize(24);
-  fill(255);
+  userStartAudio().then(() => {
+    sound.loop();
+    fadeIn();
+  });
 
   sound.setVolume(0);
+
+  document.querySelectorAll(".sound-fade-out").forEach(function(button) { button.addEventListener("click", fadeOut); });
+
   amplitude = new p5.Amplitude();
 }
 
@@ -96,17 +98,4 @@ function fadeOut() {
   }, 50);
 }
 
-// Start the audio on mouse press
-function mousePressed() {
-  if (!userInteracted) {
-    userStartAudio().then(() => {
-      sound.loop();
-      fadeIn();
-      userInteracted = true;
-    });
-  }
-}
-
-function windowResized() {
-  resizeCanvas(windowHeight, windowHeight);
-}
+function windowResized() { resizeCanvas(windowHeight, windowHeight); }
