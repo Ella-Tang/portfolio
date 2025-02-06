@@ -1,1 +1,126 @@
-const _0x4403f8=_0x21e6;(function(_0x26b807,_0x4b8dbf){const _0x30232c=_0x21e6,_0x2e19a6=_0x26b807();while(!![]){try{const _0x16cd57=-parseInt(_0x30232c(0xc5))/0x1*(parseInt(_0x30232c(0x98))/0x2)+-parseInt(_0x30232c(0xac))/0x3*(parseInt(_0x30232c(0xab))/0x4)+-parseInt(_0x30232c(0x9e))/0x5+-parseInt(_0x30232c(0x9a))/0x6*(-parseInt(_0x30232c(0xa3))/0x7)+parseInt(_0x30232c(0xbd))/0x8+parseInt(_0x30232c(0xa9))/0x9+-parseInt(_0x30232c(0xaf))/0xa*(-parseInt(_0x30232c(0xb5))/0xb);if(_0x16cd57===_0x4b8dbf)break;else _0x2e19a6['push'](_0x2e19a6['shift']());}catch(_0x2f0ef7){_0x2e19a6['push'](_0x2e19a6['shift']());}}}(_0x2019,0xadaf3));const uiBar=document[_0x4403f8(0xb1)](_0x4403f8(0xb8)),message=document[_0x4403f8(0x9d)](_0x4403f8(0xb4)),selectedMark=document[_0x4403f8(0x9d)](_0x4403f8(0xa8)),handInd=document['getElementById'](_0x4403f8(0xc2)),toggleBtn=document['getElementById']('toggle-btn'),clearBtn=document['getElementById']('clear-btn'),modeBtn=document['getElementById']('mode-btn'),bgBtn=document['getElementById'](_0x4403f8(0xb2));modeBtn[_0x4403f8(0xa5)]=drawMode===0x1?_0x4403f8(0xa2):_0x4403f8(0xaa),toggleBtn[_0x4403f8(0xa5)]=isDrawing===0x1?_0x4403f8(0xa7):'Start';const smoothFactor=0.1,moveThreshold=0x258;let prevX=window[_0x4403f8(0xbc)]/0x2,prevY=window['innerHeight']/0x2;function _0x21e6(_0x3dd4eb,_0x1aa86a){const _0x201970=_0x2019();return _0x21e6=function(_0x21e6cd,_0x37699d){_0x21e6cd=_0x21e6cd-0x97;let _0x2ccc56=_0x201970[_0x21e6cd];return _0x2ccc56;},_0x21e6(_0x3dd4eb,_0x1aa86a);}function showHandInd(){const _0x33450f=_0x4403f8,_0x52a471=getHandPos();if(drawMode===0x1&&_0x52a471){const {x:_0xf5a91b,y:_0x2d7273}=_0x52a471,_0x472f17=lerp(prevX,_0xf5a91b,smoothFactor),_0x202772=lerp(prevY,_0x2d7273,smoothFactor);prevX=_0x472f17,prevY=_0x202772,handInd[_0x33450f(0x9f)][_0x33450f(0xa0)]=_0x472f17-0x1e+'px',handInd[_0x33450f(0x9f)][_0x33450f(0xae)]=_0x202772-0x1e+'px',handInd[_0x33450f(0x9f)][_0x33450f(0xc8)]=_0x33450f(0xca);}else prevX=window[_0x33450f(0xbc)]/0x2,prevY=window[_0x33450f(0xbe)]/0x2,handInd[_0x33450f(0x9f)][_0x33450f(0xc8)]=_0x33450f(0xa1);}function showSelectedMark(_0x31cd04,_0x179f1d,_0x6c8cf5){const _0x3ce4f8=_0x4403f8,_0x3da9f6=_0x6c8cf5*1.2;selectedMark[_0x3ce4f8(0x9f)][_0x3ce4f8(0xc1)]=_0x3da9f6+'px',selectedMark[_0x3ce4f8(0x9f)][_0x3ce4f8(0x97)]=_0x3da9f6+'px',selectedMark[_0x3ce4f8(0x9f)][_0x3ce4f8(0xa0)]=_0x31cd04-_0x3da9f6/0x2+'px',selectedMark[_0x3ce4f8(0x9f)]['top']=_0x179f1d-_0x3da9f6/0x2+'px',selectedMark[_0x3ce4f8(0x9f)]['display']='block';}function clearSelectedMark(){const _0x3d81ab=_0x4403f8;selectedMark[_0x3d81ab(0x9f)]['display']='none';}function clearCanvas(){const _0xea21b2=_0x4403f8;clearFlowers(),showMsg(_0xea21b2(0xb9));}function inDrawingArea({x:_0x512028,y:_0x2984cc}){const _0x2dd794=_0x4403f8;return _0x512028>=0x0&&_0x512028<=window[_0x2dd794(0xbc)]&&_0x2984cc>=uiBar[_0x2dd794(0xb0)]&&_0x2984cc<=window[_0x2dd794(0xbe)]-uiBar[_0x2dd794(0xb0)];}function _0x2019(){const _0xb60ada=['floor','innerWidth','5241384FWXCDn','innerHeight','isPlaying','Drawing\x20paused','width','hand-ind','pause','Start','2JrNAzF','Cannot\x20switch\x20to\x20gesture\x20mode\x0aWebcam\x20not\x20available','Drawing\x20started','display','Mode\x20switched\x20to:','block','height','1301000gOoGkq','Music\x20off','522OwOpiB','random','Music\x20on','getElementById','6842775lYwZEm','style','left','none','Manuel','94017dFWFMS','log','textContent','length','Pause','selected-mark','811098VqdfTZ','Gesture','4684wxlAVN','2913hrzaRa','Background\x20switched','top','37150KkRVty','offsetHeight','querySelector','bg-btn','isLoaded','message','7711ynqCVI','Manual','Switch\x20to\x20manual\x20mode','.ui-bar','Canvas\x20cleared','Background\x20switched\x20to\x20default'];_0x2019=function(){return _0xb60ada;};return _0x2019();}function toggleDrawing(){const _0x49b890=_0x4403f8;isDrawing=!isDrawing,toggleBtn[_0x49b890(0xa5)]=isDrawing?_0x49b890(0xa7):_0x49b890(0xc4),showMsg(isDrawing?_0x49b890(0xc7):_0x49b890(0xc0)),isDrawing?playMusic():pauseMusic();}function switchDrawingMode(){const _0x1153c7=_0x4403f8;modeBtn[_0x1153c7(0xa5)]=drawMode===0x1?_0x1153c7(0xaa):_0x1153c7(0xb6);if(drawMode===0x2&&!isWebcamAvailable)showMsg(_0x1153c7(0xc6)),console['log']('Cannot\x20switch\x20to\x20hand\x20mode,\x20currently\x20in\x20mouse\x20mode');else{drawMode=drawMode===0x1?0x2:0x1,console['log'](_0x1153c7(0xc9),drawMode===0x1?_0x1153c7(0xaa):'Manual'),showMsg(drawMode===0x1?'Switch\x20to\x20gesture\x20mode':_0x1153c7(0xb7));if(drawMode===0x2)handInd[_0x1153c7(0x9f)]['display']=_0x1153c7(0xa1);}}function showMsg(_0x355190){const _0x2b85f8=_0x4403f8;message[_0x2b85f8(0xa5)]=_0x355190,message[_0x2b85f8(0x9f)]['display']=_0x2b85f8(0xca),setTimeout(()=>{const _0x381135=_0x2b85f8;message['style'][_0x381135(0xc8)]=_0x381135(0xa1);},0x4b0);}function switchBg(){const _0xe3a38e=_0x4403f8;isRandomBg=!isRandomBg,console['log'](_0xe3a38e(0xad)),showMsg(isRandomBg?'Background\x20switched\x20to\x20random':_0xe3a38e(0xba));if(isRandomBg){let _0x180173=COLOR_PALETTE[Math[_0xe3a38e(0xbb)](Math[_0xe3a38e(0x9b)]()*COLOR_PALETTE[_0xe3a38e(0xa6)])];currBgColor=color(_0x180173['r'],_0x180173['g'],_0x180173['b'],0xc8);}else currBgColor=canvasBg;}function playMusic(){const _0x5e6e59=_0x4403f8;if(bgm&&bgm[_0x5e6e59(0xb3)]()&&!bgm[_0x5e6e59(0xbf)]())bgm['loop']();console['log'](_0x5e6e59(0x9c));}function pauseMusic(){const _0x2f4824=_0x4403f8;if(bgm&&bgm[_0x2f4824(0xbf)]())bgm[_0x2f4824(0xc3)]();console[_0x2f4824(0xa4)](_0x2f4824(0x99));}
+const uiBar = document.querySelector(".ui-bar");
+const message = document.getElementById("message")
+const selectedMark = document.getElementById("selected-mark");
+const handInd = document.getElementById("hand-ind");
+const toggleBtn = document.getElementById("toggle-btn");
+const clearBtn = document.getElementById("clear-btn");
+const modeBtn = document.getElementById("mode-btn");
+const bgBtn = document.getElementById("bg-btn");
+modeBtn.textContent = drawMode === 1 ? "Manuel" : "Gesture";
+toggleBtn.textContent = isDrawing === 1 ? "Pause" : "Start";
+
+// hand indicator related
+const smoothFactor = 0.1;
+const moveThreshold = 600;
+let prevX = window.innerWidth / 2;
+let prevY = window.innerHeight / 2;
+
+// indicator for hand position in hand detection mode
+function showHandInd() {
+  const handPos = getHandPos();
+  if (drawMode === 1 && handPos) {
+    const { x, y } = handPos;
+    const smoothedX = lerp(prevX, x, smoothFactor);
+    const smoothedY = lerp(prevY, y, smoothFactor);
+    prevX = smoothedX;
+    prevY = smoothedY; 
+    handInd.style.left = `${smoothedX - 30}px`;
+    handInd.style.top = `${smoothedY - 30}px`;
+    handInd.style.display = "block"; 
+  } else {
+    prevX = window.innerWidth / 2;
+    prevY = window.innerHeight / 2;
+    handInd.style.display = "none";
+  }
+}
+
+// circle mark to show flower selected
+function showSelectedMark(x, y, d) {
+  const offset = d * 1.2;
+  selectedMark.style.width = `${offset}px`;
+  selectedMark.style.height = `${offset}px`;
+  selectedMark.style.left = `${x - offset / 2}px`;
+  selectedMark.style.top = `${y - offset / 2}px`;
+  selectedMark.style.display = "block";
+}
+
+// clear selected mark
+function clearSelectedMark() {
+  selectedMark.style.display = "none";
+}
+
+// clear canvas
+function clearCanvas() {
+  clearFlowers(); 
+  showMsg("Canvas cleared");
+}
+
+// if interaction within drawing area
+function inDrawingArea({ x, y }) {
+  return (
+    x >= 0 &&
+    x <= window.innerWidth &&
+    y >= uiBar.offsetHeight &&
+    y <= window.innerHeight - uiBar.offsetHeight
+  );
+}
+
+// toggle drawing state
+function toggleDrawing() {
+  isDrawing = !isDrawing;
+  toggleBtn.textContent = isDrawing ? "Pause" : "Start";
+  showMsg(isDrawing ? "Drawing started" : "Drawing paused");
+  if (isDrawing) { playMusic(); } 
+  else { pauseMusic(); }
+}
+
+// switch drawing mode
+function switchDrawingMode() {
+  modeBtn.textContent = drawMode === 1 ? "Gesture" : "Manual";
+  if (drawMode === 2 && !isWebcamAvailable) {
+    // try to switch to hand detection but webcam not available
+    showMsg("Cannot switch to gesture mode\nWebcam not available");
+    console.log("Cannot switch to hand mode, currently in mouse mode");
+  } else {
+    // toggle between Mouse Control (2) and Hand Detection (1)
+    drawMode = drawMode === 1 ? 2 : 1;
+    console.log("Mode switched to:", drawMode === 1 ? "Gesture" : "Manual");
+    showMsg(drawMode === 1 ? "Switch to gesture mode" : "Switch to manual mode");
+    if (drawMode === 2) handInd.style.display = "none";
+  }
+}
+
+// display drawing mode switch/ drawing state message
+function showMsg(content) {
+  message.textContent = content;
+  message.style.display = 'block';
+  setTimeout(() => {
+    message.style.display = 'none';
+  }, 1200);
+}
+
+// switch background color
+function switchBg() {
+  isRandomBg = !isRandomBg;
+  console.log("Background switched");
+  showMsg(isRandomBg ? "Background switched to random" : "Background switched to default");
+  if (isRandomBg) {
+    // random color from palette
+    let random = COLOR_PALETTE[Math.floor(Math.random() * COLOR_PALETTE.length)];
+    currBgColor = color(random.r, random.g, random.b, 200);
+  } else {
+    // reset to default
+    currBgColor = canvasBg;
+  }
+}
+
+// music control
+function playMusic() {
+  if (bgm && bgm.isLoaded() && !bgm.isPlaying()) bgm.loop();
+  console.log("Music on");
+}
+
+function pauseMusic() {
+  if (bgm && bgm.isPlaying()) bgm.pause();
+  console.log("Music off");
+}

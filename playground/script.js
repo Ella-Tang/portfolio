@@ -1,1 +1,82 @@
-const _0x4613fc=_0x2570;(function(_0x4670d2,_0x50ce00){const _0x287997=_0x2570,_0x191131=_0x4670d2();while(!![]){try{const _0x2add83=-parseInt(_0x287997(0x8f))/0x1*(-parseInt(_0x287997(0x7d))/0x2)+-parseInt(_0x287997(0x6f))/0x3*(parseInt(_0x287997(0x79))/0x4)+parseInt(_0x287997(0x6c))/0x5+-parseInt(_0x287997(0x76))/0x6*(parseInt(_0x287997(0x82))/0x7)+parseInt(_0x287997(0x88))/0x8*(parseInt(_0x287997(0x83))/0x9)+-parseInt(_0x287997(0x75))/0xa+parseInt(_0x287997(0x90))/0xb;if(_0x2add83===_0x50ce00)break;else _0x191131['push'](_0x191131['shift']());}catch(_0x324bb8){_0x191131['push'](_0x191131['shift']());}}}(_0x5740,0x3d3b5));function _0x2570(_0xcc2996,_0x2cf8db){const _0x57400c=_0x5740();return _0x2570=function(_0x25709e,_0x3af510){_0x25709e=_0x25709e-0x6a;let _0x4f25a7=_0x57400c[_0x25709e];return _0x4f25a7;},_0x2570(_0xcc2996,_0x2cf8db);}function _0x5740(){const _0x2afa3b=['Drawing\x20flowers\x20with\x20gesture\x20(hand\x20detection)\x20or\x20mouse\x20control.\x20A\x20webcam\x20is\x20required\x20for\x20gesture.\x20User\x20can\x20draw\x20flower\x20based\x20on\x20previous\x20selection\x20with\x20passed\x20genes\x20and\x20a\x20chance\x20of\x20mutation.','HTML,\x20Javascript\x20(p5.js\x20&\x20ml5\x20library),\x20CSS','date','phantasmagoric/images/phantasmagoric-1.png','2023','\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22column-item\x20project\x22\x20data-category=\x22','5ZQWDUx','2655829XAbzPt','cappriccio/index.html','</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22project-title\x22>','Photography\x20experiments\x20to\x20illustrate\x20a\x20surreal\x20city\x20environment.','wanted/images/wanted-0.jpg','filter','2024','</div>','title','<div\x20class=\x22column\x20column-','Interactive\x20game\x20to\x20catch\x20wanted\x20animals\x20generated\x20through\x20a\x20particle\x20system\x20that\x20randomly\x20fall\x20from\x20top\x20of\x20the\x20screen.','Processing\x20in\x20Java','</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22','.column-container','till-success/index.html','A\x20runner\x20+\x20word\x20game.\x20The\x20game\x20continues\x20until\x20success.','2021','cappriccio/images/cappriccio-1.jpg','Cappriccio','468765psWCzG','innerHTML','image','452757QNejPN','\x22\x20class=\x22item-link\x20project-link\x22></a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20','phantasmagoric/index.html','non-interactive','category','2022','2520120PgbcEB','114RPpZaH','bloom/index.html','Phantasmagoric','8yGzHlS','push','Till\x20Success','bloom/images/bloom-0.jpg','117610MGNoIL','\x22\x20style=\x22background-image:\x20url(\x27','interactive','till-success/images/till-success-0.jpg','forEach','11438GAQyel','36TVclDo','querySelector','\x27);\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22project-date\x22>','Medium:\x20digital','Wanted','412968dvNwTG'];_0x5740=function(){return _0x2afa3b;};return _0x5740();}const items=[{'date':_0x4613fc(0xa0),'title':_0x4613fc(0x6b),'description':_0x4613fc(0x86),'category':_0x4613fc(0x72),'link':_0x4613fc(0x91),'image':_0x4613fc(0x6a),'paragraph':'Digital\x20painting\x20series\x20as\x20a\x20study\x20of\x20color,\x20lines,\x20and\x20textures.'},{'date':_0x4613fc(0x74),'title':_0x4613fc(0x78),'description':'Medium:\x20photography','category':_0x4613fc(0x72),'link':_0x4613fc(0x71),'image':_0x4613fc(0x8c),'paragraph':_0x4613fc(0x93)},{'date':_0x4613fc(0x8d),'title':_0x4613fc(0x7b),'description':_0x4613fc(0x9b),'category':_0x4613fc(0x7f),'link':_0x4613fc(0x9e),'image':_0x4613fc(0x80),'paragraph':_0x4613fc(0x9f)},{'date':_0x4613fc(0x96),'title':'Bloom','description':_0x4613fc(0x8a),'category':_0x4613fc(0x7f),'link':_0x4613fc(0x77),'image':_0x4613fc(0x7c),'paragraph':_0x4613fc(0x89)},{'date':_0x4613fc(0x96),'title':_0x4613fc(0x87),'description':'HTML,\x20Javascript\x20(p5.js\x20library),\x20CSS','category':_0x4613fc(0x7f),'link':'wanted/index.html','image':_0x4613fc(0x94),'paragraph':_0x4613fc(0x9a)}];function renderColumns(_0x597c56=items){const _0x1d7049=_0x4613fc,_0xd59481=document[_0x1d7049(0x84)](_0x1d7049(0x9d));if(!_0xd59481)return;const _0x12e598=0x5,_0x192b6b=[];for(let _0x3bc7c7=0x0;_0x3bc7c7<_0x12e598;_0x3bc7c7++){_0x192b6b[_0x1d7049(0x7a)]('');}let _0x12bc38=0x0,_0x3ce856='';_0x597c56[_0x1d7049(0x81)](function(_0x41c5d9){const _0x450d24=_0x1d7049;_0x192b6b[_0x12bc38]+=_0x450d24(0x8e)+_0x41c5d9[_0x450d24(0x73)]+_0x450d24(0x7e)+_0x41c5d9[_0x450d24(0x6e)]+_0x450d24(0x85)+_0x41c5d9[_0x450d24(0x8b)]+_0x450d24(0x92)+_0x41c5d9[_0x450d24(0x98)]+_0x450d24(0x9c)+_0x41c5d9['link']+_0x450d24(0x70),_0x12bc38=(_0x12bc38+0x1)%_0x12e598;}),_0x192b6b[_0x1d7049(0x81)](function(_0x755f9d,_0xb995d5){const _0x405a47=_0x1d7049;_0x3ce856+=_0x405a47(0x99)+(_0xb995d5+0x1)+'\x22>'+_0x755f9d+_0x405a47(0x97);}),_0xd59481[_0x1d7049(0x6d)]=_0x3ce856;}renderColumns();function filterColumns(_0x1f9a82){const _0x6edf32=_0x4613fc;var _0x3527f4=_0x1f9a82==='all'?items:items[_0x6edf32(0x95)](function(_0x250c50){return _0x250c50['category']===_0x1f9a82;});renderColumns(_0x3527f4),updateFilterBtn(_0x1f9a82);}
+const items = [
+  { 
+    date: "2021", 
+    title: "Cappriccio", 
+    description: "Medium: digital", 
+    category: "non-interactive", 
+    link: "cappriccio/index.html",
+    image: "cappriccio/images/cappriccio-1.jpg",
+    paragraph:"Digital painting series as a study of color, lines, and textures."
+  },
+  { 
+    date: "2022", 
+    title: "Phantasmagoric", 
+    description: "Medium: photography",
+    category: "non-interactive", 
+    link: "phantasmagoric/index.html",
+    image: "phantasmagoric/images/phantasmagoric-1.png",
+    paragraph:"Photography experiments to illustrate a surreal city environment."
+  },
+  {  
+    date: "2023", 
+    title: "Till Success", 
+    description: "Processing in Java", 
+    category: "interactive", 
+    link: "till-success/index.html",
+    image: "till-success/images/till-success-0.jpg",
+    paragraph:"A runner + word game. The game continues until success."
+  },
+  { 
+    date: "2024", 
+    title: "Bloom", 
+    description: "HTML, Javascript (p5.js & ml5 library), CSS", 
+    category: "interactive", 
+    link: "bloom/index.html",
+    image: "bloom/images/bloom-0.jpg",
+    paragraph:"An interactive art project built with p5.js and ml5.js that allows users to draw flowers on screen using hand detection (via a webcam) or mouse control."
+  },
+  { 
+    date: "2024", 
+    title: "Wanted", 
+    description: "HTML, Javascript (p5.js library), CSS", 
+    category: "interactive", 
+    link: "wanted/index.html",
+    image: "wanted/images/wanted-0.jpg",
+    paragraph:"Interactive game to catch wanted animals generated through a particle system that randomly fall from top of the screen."
+  },
+];
+
+function renderColumns(filteredItems = items) {
+  const container = document.querySelector('.column-container');
+  if (!container) return;
+  const columnCount = 5;
+  const columns = [];
+  for (let i = 0; i < columnCount; i++) { columns.push(''); }
+  let columnIndex = 0; 
+  let columnsHTML = '';
+
+  filteredItems.forEach(function(item) {
+    columns[columnIndex] += `
+      <div class="column-item project" data-category="${item.category}" style="background-image: url('${item.image}');">
+        <p class="project-date">${item.date}</p>
+        <h2 class="project-title">${item.title}</h2>
+        <a href="${item.link}" class="item-link project-link"></a>
+        </div>
+      `;      
+      columnIndex = (columnIndex + 1) % columnCount; 
+    });
+    columns.forEach(function(content, idx) {
+        columnsHTML += `<div class="column column-${idx + 1}">${content}</div>`;
+    });
+    container.innerHTML = columnsHTML;
+}
+
+renderColumns();
+
+function filterColumns(category) {
+  var filteredItems = category === 'all' ? items : items.filter(function(item) {
+      return item.category === category;
+  });
+  renderColumns(filteredItems);
+  updateFilterBtn(category);
+}
