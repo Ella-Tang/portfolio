@@ -1,1 +1,82 @@
-function _0x49a5(){const _0x6fdc52=['2023','https://ella-tang.github.io/portfolio/studio/fluttering/images/fluttering-1.png','https://ella-tang.github.io/portfolio/studio/still-life/images/silence.jpg','11848ljhRMz','2020','\x22\x20class=\x22artwork\x22\x20style=\x22background-image:\x20url(\x27','\x27);\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22artwork-content\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22project-date\x22>','14403BxyBeb','innerHTML','Creature','Medium:\x20Welded\x20metal,\x20found\x20fluffy\x20bear\x20toy,\x20light\x20torch','title','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22artwork\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22','refuge/index.html','https://ella-tang.github.io/portfolio/studio/refuge/images/refuge-1.jpg','3327716vQDcwR','Medium:\x20Oil\x20on\x20canvas,\x20found\x20human\x20miniatures','still-life/index.html','addEventListener','2022','image','two-cities/index.html','30GwaSYm','Medium:\x20Ceramics\x20sculpture','Medium:\x20Neon\x20light\x20installation','https://ella-tang.github.io/portfolio/studio/inner-beast/images/inner-beast-1.jpg','A\x20sculpture\x20designed\x20for\x20a\x20fictional\x20festival,\x20the\x20nocturnal\x20festival.\x20','2020-2021','Engraving\x20portraying\x20two\x20different\x20cities:\x20Shanghai\x20and\x20New\x20York\x20City.','Medium:\x20paper,\x20cardboard,\x20arduino,\x20servo\x20motor','artworkGrid','1640100IHUBOV','creature/index.html','186liiGHR','</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20','https://ella-tang.github.io/portfolio/studio/sweet-potato/images/sweet-potato-1.jpg','Still\x20Life','portraiture/index.html','Medium:\x20engraving','Medium:\x20variable','588371EZOAoa','link','Fluttering','A\x20mixed\x20media\x20installation,\x20symbolizing\x20childhood\x20innocence\x20as\x20a\x20safe\x20haven\x20from\x20adult\x20realities.','https://ella-tang.github.io/portfolio/studio/portraiture/images/self-portrait-2.jpg','2017-2018','1989IzmGpA','3395650mlPjOY','438424SwEyfd','https://ella-tang.github.io/portfolio/studio/creature/images/creature-1.jpg','inner-beast/index.html','A\x20neon\x20light\x20installation\x20with\x20red\x20and\x20blue\x20glow,\x20depicting\x20an\x20abstract\x20dinosaur\x20figure\x20that\x20symbolizes\x20the\x20self\x20contained\x20within\x20its\x20environment.','A\x20kinetic\x20sculpture\x20combining\x20paper\x20engineering\x20with\x20electronics.\x20Powered\x20by\x20a\x20servo\x20motor\x20and\x20a\x20microcontroller,\x20this\x20work\x20resembles\x20the\x20motion\x20of\x20fluttering.','forEach','Inner\x20Beast','Portraiture'];_0x49a5=function(){return _0x6fdc52;};return _0x49a5();}const _0x3eb63c=_0x2d34;function _0x2d34(_0x297029,_0x36cb43){const _0x49a584=_0x49a5();return _0x2d34=function(_0x2d3459,_0x1cd388){_0x2d3459=_0x2d3459-0x1a4;let _0x15f2bd=_0x49a584[_0x2d3459];return _0x15f2bd;},_0x2d34(_0x297029,_0x36cb43);}(function(_0x465aad,_0x4adbd4){const _0xdc8360=_0x2d34,_0x2f3c52=_0x465aad();while(!![]){try{const _0x2e40fb=parseInt(_0xdc8360(0x1d0))/0x1+parseInt(_0xdc8360(0x1c1))/0x2*(parseInt(_0xdc8360(0x1a7))/0x3)+-parseInt(_0xdc8360(0x1af))/0x4+parseInt(_0xdc8360(0x1cf))/0x5+parseInt(_0xdc8360(0x1b6))/0x6*(-parseInt(_0xdc8360(0x1c8))/0x7)+parseInt(_0xdc8360(0x1db))/0x8*(parseInt(_0xdc8360(0x1ce))/0x9)+-parseInt(_0xdc8360(0x1bf))/0xa;if(_0x2e40fb===_0x4adbd4)break;else _0x2f3c52['push'](_0x2f3c52['shift']());}catch(_0x5c1b9b){_0x2f3c52['push'](_0x2f3c52['shift']());}}}(_0x49a5,0x74008));const artworks=[{'date':_0x3eb63c(0x1d8),'title':_0x3eb63c(0x1d6),'description':_0x3eb63c(0x1b8),'link':_0x3eb63c(0x1d2),'image':_0x3eb63c(0x1b9),'paragraph':_0x3eb63c(0x1d3)},{'date':_0x3eb63c(0x1b3),'title':_0x3eb63c(0x1a9),'description':_0x3eb63c(0x1b7),'link':_0x3eb63c(0x1c0),'image':_0x3eb63c(0x1d1),'paragraph':_0x3eb63c(0x1ba)},{'date':_0x3eb63c(0x1b3),'title':'Refuge','description':_0x3eb63c(0x1aa),'link':_0x3eb63c(0x1ad),'image':_0x3eb63c(0x1ae),'paragraph':_0x3eb63c(0x1cb)},{'date':'2022','title':_0x3eb63c(0x1ca),'description':_0x3eb63c(0x1bd),'link':'fluttering/index.html','image':_0x3eb63c(0x1d9),'paragraph':_0x3eb63c(0x1d4)},{'date':_0x3eb63c(0x1a4),'title':'Sweet\x20Potato','description':_0x3eb63c(0x1b0),'link':'sweet-potato/index.html','image':_0x3eb63c(0x1c3),'paragraph':'A\x20painting\x20portraying\x20a\x20dystopian\x20society\x20where\x20people\x20entertain\x20themselves\x20to\x20death.'},{'date':_0x3eb63c(0x1bb),'title':_0x3eb63c(0x1d7),'description':_0x3eb63c(0x1c7),'link':_0x3eb63c(0x1c5),'image':_0x3eb63c(0x1cc),'paragraph':'Portraiture\x20from\x202020\x20to\x202021.'},{'date':_0x3eb63c(0x1bb),'title':_0x3eb63c(0x1c4),'description':'Medium:\x20variable','link':_0x3eb63c(0x1b1),'image':_0x3eb63c(0x1da),'paragraph':'Still-life\x20from\x202020\x20to\x202021.'},{'date':_0x3eb63c(0x1cd),'title':'Two\x20cities','description':_0x3eb63c(0x1c6),'link':_0x3eb63c(0x1b5),'image':'https://ella-tang.github.io/portfolio/studio/two-cities/images/sh-1.jpg','paragraph':_0x3eb63c(0x1bc)}];function renderArtworks(){const _0x2d9d60=_0x3eb63c,_0x376282=document['getElementById'](_0x2d9d60(0x1be));let _0x126c7e='';artworks[_0x2d9d60(0x1d5)](function(_0x521c4f){const _0x175431=_0x2d9d60;_0x126c7e+=_0x175431(0x1ac)+_0x521c4f[_0x175431(0x1c9)]+_0x175431(0x1a5)+_0x521c4f[_0x175431(0x1b4)]+_0x175431(0x1a6)+_0x521c4f['date']+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2\x20class=\x22project-title\x22>'+_0x521c4f[_0x175431(0x1ab)]+_0x175431(0x1c2);}),_0x376282[_0x2d9d60(0x1a8)]=_0x126c7e;}document[_0x3eb63c(0x1b2)]('DOMContentLoaded',renderArtworks);
+// Artworks data
+const artworks = [
+  { date: "2023", 
+    title: "Inner Beast", 
+    description: "Medium: Neon light installation",
+    link: "inner-beast/index.html", 
+    image: "../../studio/inner-beast/images/inner-beast-1.jpg", 
+    paragraph: "A neon light installation with red and blue glow, depicting an abstract dinosaur figure that symbolizes the self contained within its environment." 
+  },
+  { date: "2022", 
+    title: "Creature", 
+    description: "Medium: Ceramics sculpture",
+    link: "creature/index.html", 
+    image: "../../studio/creature/images/creature-1.jpg", 
+    paragraph: "A sculpture designed for a fictional festival, the nocturnal festival. " 
+  },
+  { date: "2022", 
+    title: "Refuge", 
+    description: "Medium: Welded metal, found fluffy bear toy, light torch",
+    link: "refuge/index.html", 
+    image: "../../studio/refuge/images/refuge-1.jpg", 
+    paragraph: "A mixed media installation, symbolizing childhood innocence as a safe haven from adult realities." 
+  },
+  { date: "2022", 
+    title: "Fluttering", 
+    description: "Medium: paper, cardboard, arduino, servo motor",
+    link: "fluttering/index.html", 
+    image: "../../studio/fluttering/images/fluttering-1.png", 
+    paragraph: "A kinetic sculpture combining paper engineering with electronics. Powered by a servo motor and a microcontroller, this work resembles the motion of fluttering." 
+  },
+  { date: "2020", 
+    title: "Sweet Potato", 
+    description: "Medium: Oil on canvas, found human miniatures",
+    link: "sweet-potato/index.html", 
+    image: "../../studio/sweet-potato/images/sweet-potato-1.jpg", 
+    paragraph: "A painting portraying a dystopian society where people entertain themselves to death." 
+  },
+  { date: "2020-2021", 
+    title: "Portraiture", 
+    description: "Medium: variable",
+    link: "portraiture/index.html", 
+    image: "../../studio/portraiture/images/self-portrait-2.jpg", 
+    paragraph: "Portraiture from 2020 to 2021." 
+  },
+  { date: "2020-2021", 
+    title: "Still Life", 
+    description: "Medium: variable",
+    link: "still-life/index.html", 
+    image: "../../studio/still-life/images/silence.jpg", 
+    paragraph: "Still-life from 2020 to 2021." 
+  },
+  { date: "2017-2018", 
+    title: "Two Cities", 
+    description: "Medium: engraving",
+    link: "two-cities/index.html", 
+    image: "../../studio/two-cities/images/sh-1.jpg", 
+    paragraph: "Engraving portraying two different cities: Shanghai and New York City." 
+  }
+];
+
+// Render artworks
+function renderArtworks() {
+const artworkGrid = document.getElementById("artworkGrid");
+let artworkHTML = '';
+
+artworks.forEach(function(artwork) {
+  artworkHTML += `
+    <div class="artwork">
+      <a href="${artwork.link}" class="artwork" style="background-image: url('${artwork.image}');">
+      <div class="artwork-content">
+        <p class="project-date">${artwork.date}</p>
+        <h2 class="project-title">${artwork.title}</h2>
+      </div>
+      </a>
+  </div>
+    `;
+});
+
+artworkGrid.innerHTML = artworkHTML;
+}
+
+document.addEventListener("DOMContentLoaded", renderArtworks);
