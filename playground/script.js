@@ -49,34 +49,29 @@ const items = [
 function renderColumns(filteredItems = items) {
   const container = document.querySelector('.column-container');
   if (!container) return;
-  const columnCount = 5;
+  const columnNum = items.length;
   const columns = [];
-  for (let i = 0; i < columnCount; i++) { columns.push(''); }
-  let columnIndex = 0; 
+  for (let i = 0; i < columnNum; i++) { columns.push(''); }
+  let i = 0; 
   let columnsHTML = '';
 
   filteredItems.forEach(function(item) {
-    columns[columnIndex] += `
-      <div class="column-item project" data-category="${item.category}" style="background-image: url('${item.image}');">
-        <p class="project-date">${item.date}</p>
-        <h2 class="project-title">${item.title}</h2>
-        <a href="${item.link}" class="item-link project-link"></a>
+    columns[i] += `
+        <div class="column-item project" data-category="${item.category}" style="background-image: url('${item.image}');">
+          <p class="project-date">${item.date}</p>
+          <h2 class="project-title">${item.title}</h2>
+          <a href="${item.link}" class="item-link project-link"></a>
         </div>
       `;      
-      columnIndex = (columnIndex + 1) % columnCount; 
-    });
-    columns.forEach(function(content, idx) {
-        columnsHTML += `<div class="column column-${idx + 1}">${content}</div>`;
-    });
-    container.innerHTML = columnsHTML;
+    i = (i + 1) % columnNum; 
+  });
+  columns.forEach(function(content, i) { columnsHTML += `<div class="column column-${i + 1}">${content}</div>`; });
+  container.innerHTML = columnsHTML;
+}
+
+function filterColumns(category) {
+  renderColumns(category === 'all' ? items : items.filter(item => item.category === category));
+  updateFilterBtn(category);
 }
 
 renderColumns();
-
-function filterColumns(category) {
-  var filteredItems = category === 'all' ? items : items.filter(function(item) {
-      return item.category === category;
-  });
-  renderColumns(filteredItems);
-  updateFilterBtn(category);
-}

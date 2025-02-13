@@ -1,29 +1,27 @@
 /* ----------- Fade-in ----------- */
 .fade-in {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(40px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.fade-in-up { transform: translateY(30px); }
-.fade-in-down { transform: translateY(-30px); }
-.fade-in-left { transform: translateX(-30px); }
-.fade-in-right { transform: translateX(30px); }
 
 /* animation effect when the element becomes visible */
-.fade-in.visible, .fade-in-up.visible,
-.fade-in-down.visible, .fade-in-left.visible, .fade-in-right.visible {
+.fade-in.visible {
   opacity: 1;
   transform: translate(0, 0); 
 }
 
 /* ----------- Cursor ----------- */
+* {
+  cursor: none;
+}
 /* Custom cursor (default) */
 .custom-cursor {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
   background-color: #ea1e1e;
   border: 2px solid #ea1e1e;
   border-radius: 50%;
@@ -38,10 +36,21 @@
   width: 20px;
   height: 20px;
 }
+/* Custom cursor (click) */
+.custom-cursor.click {
+  width: 18px;
+  height: 18px;
+}
+/* Custom cursor (color difference) */
+.custom-cursor.difference {
+  background-color: #333;
+  border: 2px solid #333;
+  mix-blend-mode: difference;
+}
+/* Custom cursor (mobile) */
 @media (hover: none) and (pointer: coarse) {
   .custom-cursor { display: none; }
 }
-
 /* ----------- Selected text ----------- */
 ::selection {
   background-color: #333;
@@ -177,7 +186,6 @@ header a h1 {
   text-align: left;
   display: inline-block; 
   vertical-align: middle;
-  cursor: none;
   box-sizing: border-box;
 }
 /* Header link (visited) */
@@ -206,7 +214,6 @@ nav .nav-button {
   color: #333;
   background-color: transparent;
   text-decoration: none;
-  cursor: none;
   border-bottom: 2px solid transparent; 
   transition: color 0.3s, border-bottom-color 0.5s ease; 
 }
@@ -216,13 +223,11 @@ nav button:focus,nav .nav-button:focus,
 nav button.active,nav .nav-button.active {
   border-bottom-color: #333; 
   color: #333; 
-  cursor: none;
 }
 /* Nav button (inactive) */
 nav button.inactive,
 nav .nav-button.inactive {
   color: #999; 
-  cursor: none;
 }
 
 /* ----------- Filter bar ----------- */
@@ -245,7 +250,6 @@ nav .nav-button.inactive {
   border: 2px solid transparent;
   color: #333;
   background-color: transparent;
-  cursor: none;
   transition: border 0.5s ease, color 0.5s ease;
 }
 /* Filter button (hover)) */

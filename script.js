@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
   else if(isPlaygroundPage) { renderProjectDetails(items); }
 });
 
+function hideOriginalCursor() {
+  document.body.style.cursor = "none";
+  document.querySelectorAll("*").forEach((e) => { e.style.cursor = "none"; });
+}
+
 // Opening fade in effect on page load
 window.addEventListener('load', function () {
   document.querySelector('.opening-container .fade-in').classList.add('visible');
@@ -21,33 +26,66 @@ window.addEventListener('load', function () {
       openingContainer.style.display = 'none';
       const mainContainer = document.querySelector('.main-container');
       mainContainer.classList.remove('hidden');
-      const fadeInEl = document.querySelectorAll(".fade-in, .fade-in-up, .fade-in-down, .fade-in-left, .fade-in-right");
-      for (let i = 0; i < fadeInEl.length; i++) { fadeInEl[i].classList.add("visible"); }
-    }, 300);
-}, 400); 
+      document.querySelectorAll('.fade-in').forEach(function (e) { e.classList.add('visible'); });
+    }, 100);
+}, 300); 
 });
 
 // Custom cursor
 function setupCustomCursor() {
-  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-    const cursor = document.querySelector('.custom-cursor');
-    const cursorElements = document.querySelectorAll('.cursor-element');
-    const artworkGrid = document.getElementById('artworkGrid');
-    document.addEventListener('mousemove', function (e) {
-      cursor.style.top = e.clientY + 'px';
-      cursor.style.left = e.clientX + 'px';
-    });
-    cursorElements.forEach(function (e) {
-      e.addEventListener('mouseenter', function () { cursor.classList.add('hovering'); });
-      e.addEventListener('mouseleave', function () { cursor.classList.remove('hovering'); });
-    });
-    if (isStudioPage && artworkGrid) {
-      artworkGrid.addEventListener('mouseenter', function () { cursor.classList.add('artwork-hover-active'); });
-      artworkGrid.addEventListener('mouseleave', function () { cursor.classList.remove('artwork-hover-active'); });
-    }
-  } else { 
-    if (document.querySelector('.custom-cursor')) { cursor.style.display = 'none'; }
+  hideOriginalCursor();
+  let cursor = document.querySelector(".custom-cursor");
+  if (!cursor) {
+    cursor = document.createElement("div");
+    cursor.classList.add("custom-cursor");
+    document.body.appendChild(cursor);
   }
+
+  document.addEventListener('mousemove', function (e) {
+    cursor.style.top = `${e.clientY}px`;
+    cursor.style.left = `${e.clientX}px`;
+  });
+
+  document.querySelectorAll('.cursor-element').forEach(function (e) {
+    e.addEventListener('mouseenter', function () { cursor.classList.add('hovering'); });
+    e.addEventListener('mouseleave', function () { cursor.classList.remove('hovering'); });
+  });
+
+  document.querySelectorAll('.cursor-element, p, span, h1, h2, h3, h4, h5, h6, strong, em, a').forEach((e) => {
+    e.addEventListener('mouseenter', () => {
+      if (!e.closest('.artwork-hover')) {
+        cursor.classList.add('difference');
+      }
+    });
+
+    e.addEventListener('mouseleave', () => {
+      cursor.classList.remove('difference');
+    });
+  });
+
+  document.addEventListener("mousedown", () => { 
+    hideOriginalCursor();
+    cursor.classList.add('click'); 
+  });
+
+  document.addEventListener("mouseup", () => { 
+    hideOriginalCursor();
+    cursor.classList.remove('click'); 
+  });
+
+  document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      hideOriginalCursor();
+      cursor.style.display = "none"; 
+    });
+  });
+}
+
+function applyCursorDifference() {
+  document.querySelectorAll('.nav-button', 'p, span, h1, h2, h3, h4, h5, h6, strong, em').forEach((e) => {
+    e.addEventListener('mouseenter', () => cursor.classList.add('difference'));
+    e.addEventListener('mouseleave', () => cursor.classList.remove('difference'));
+  });
 }
 
 // Typing effect in header
@@ -76,7 +114,7 @@ function updateFilterBtn(category) {
   const buttons = document.querySelectorAll('.filters button');
   buttons.forEach(function(button) {
     const buttonCategory = button.getAttribute('data-category') || button.innerText.toLowerCase();
-    if (category === 'all' && buttonCategory === 'all' || buttonCategory === category) {
+    if (category == 'all' && buttonCategory == 'show all' || buttonCategory == category) {
       button.classList.add('active');
       button.classList.remove('inactive');
     } else {

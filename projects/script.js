@@ -35,17 +35,17 @@ function renderProjects() {
   if (!timeline) return;
   let projectHTML = '';
 
-  projects.forEach(function(project, index) {
+  projects.forEach(function(project, i) {
     projectHTML += `
       <div class="project" data-category="${project.category}">
-      <span class="project-dot">${index + 1}</span>
-      <div class="project-content">
-      <img src="${project.image}" alt="${project.title} image" class="project-image">
-      <h2>${project.title}</h2>
-      <p class="project-date">${project.date}</p>
-      <p class="project-description">${project.description}</p>
-      <a href="${project.link}" class="project-link"></a>
-      </div>
+        <span class="project-dot">${i + 1}</span>
+        <div class="project-content">
+          <img src="${project.image}" alt="${project.title} image" class="project-image">
+          <h2>${project.title}</h2>
+          <p class="project-date">${project.date}</p>
+          <p class="project-description">${project.description}</p>
+          <a href="${project.link}" class="project-link"></a>
+        </div>
       </div>
     `;
   });
@@ -62,8 +62,8 @@ function renderProjects() {
 }
 
 // Check if an element is in the viewport
-function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
+function isInViewport(e) {
+  const rect = e.getBoundingClientRect();
   return rect.top >= 0 && rect.bottom <= window.innerHeight;
 }
 
@@ -97,7 +97,6 @@ window.addEventListener('scroll', function () {
   if (closestProject) {
     const dot = closestProject.querySelector('.project-dot');
     const content = closestProject.querySelector('div');
-    // Add 'visible' to the dot and 'focused' to the project content and vertical line
     dot.classList.add('visible');
     content.classList.add('focused');
     closestProject.classList.add('focused');
@@ -117,7 +116,7 @@ function filterProjects(category) {
       setTimeout(function() {
         project.style.display = 'flex'; 
         project.classList.add('fade-in'); 
-        setTimeout(function() { project.classList.add('visible'); }, 20);
+        setTimeout(function() { project.classList.add('visible'); }, 5);
       }, 10);
       if (!firstVisibleProject) firstVisibleProject = project; 
       updateFilterBtn(category);
@@ -131,7 +130,7 @@ function filterProjects(category) {
   // Set focus on the first visible project after filtering
   if (firstVisibleProject) {
     const dot = firstVisibleProject.querySelector('.project-dot');
-    const content = firstVisibleProject.querySelector('div');   
+    const content = firstVisibleProject.querySelector('div');
     dot.classList.add('visible');
     content.classList.add('focused');
     firstVisibleProject.classList.add('focused');
