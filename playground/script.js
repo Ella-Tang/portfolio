@@ -66,6 +66,7 @@ function renderColumns(filteredItems = items) {
     i = (i + 1) % columnNum; 
   });
   columns.forEach(function(content, i) { columnsHTML += `<div class="column column-${i + 1}">${content}</div>`; });
+
   container.innerHTML = columnsHTML;
 }
 
