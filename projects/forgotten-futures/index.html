@@ -40,30 +40,53 @@
       transition: transform 0.3s ease;
     }
     .left-arrow {
-        left: 0.8vw;
+      left: 0.8vw;
     }
     .right-arrow {
-        right: 0.8vw;
+      right: 0.8vw;
     }
     .arrow:hover {
-        transform: translateY(-50%) scale(1.2);
+      transform: translateY(-50%) scale(1.2);
     }
     @media (max-width: 600px) {
-        .arrow {
-            width: 12vw;
-            height: 12vw;
-            font-size: 3vw;
-        }
-        .toggle {
-            justify-content: center;
-        }
+      .arrow {
+        width: 12vw;
+        height: 12vw;
+        font-size: 3vw;
+      }
+      .toggle {
+        justify-content: center;
+      }
     }
     @media (min-width: 1200px) {
-        .arrow {
-            width: 40px;
-            height: 40px;
-            font-size: 1.5vw;
-        }
+      .arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5vw;
+      }
+    }
+    @media (max-width: 480px) {
+      .artwork-image {
+        width: 95%;
+        margin: 3em auto 0 auto;
+      }
+      .sub-heading-content-container {
+        width: 95%;
+        margin: 0 auto;
+      }
+      .gallery-container {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .arrow {
+        color: #fff;
+      }
+      .left-arrow {
+        left: 0.2vw;
+      }
+      .right-arrow {
+        right: 0.2vw;
+      }
     }
   </style>
 </head>

@@ -668,7 +668,7 @@ nav .nav-button.inactive {
   }
   .artwork-image {
     grid-row: 2;
-    width: 95%;
+    width: 100%;
     max-width: 480px;
     margin: 0 auto;
     box-sizing: border-box;
