@@ -8,7 +8,6 @@
 
 .studio-container {
   width: 90%;
-  margin: 0 auto;
   padding-top: 1em; 
 }
 
@@ -224,7 +223,7 @@ h1 {
 /* Responsive Design for Phones */
 @media (max-width: 480px) {
   .studio-container {
-    width: 80%;
+    width: 90%;
   }
 
   .gallery-container {
@@ -253,6 +252,7 @@ h1 {
 
   .artwork-content h2 {
     font-size: 1.4em; 
+    text-align: center;
   }
 
   .artwork-content p {
