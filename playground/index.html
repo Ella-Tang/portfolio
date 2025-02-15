@@ -32,59 +32,59 @@
     .column:hover { flex: 2; }
     /* Column item with overlay */
     .column-item {
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        padding: 2em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: color 0.5s ease, transform 0.3s ease;
-        height: 50%;
-        border: 2px solid #fff;
-        overflow: hidden;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: color 0.5s ease, transform 0.3s ease;
+      height: 50%;
+      border: 2px solid #fff;
+      overflow: hidden;
     }
     /* Overlay effect */
     .column-item::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.2); 
-        transition: opacity 0.5s ease;
-        z-index: 1;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2); 
+      transition: opacity 0.5s ease;
+      z-index: 1;
     }
     /* Reveal background and text on hover */
     .column-item:hover::before {
-        background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.4);
     }
     .column-item:hover h2,
     .column-item:hover p { color: #fff; }
     /* Content within column */
     .column-item h2, .column-item p {
-        position: relative;
-        z-index: 2;
-        color: transparent; /* Start hidden */
-        text-align: center;
-        transition: color 0.5s ease;
+      position: relative;
+      z-index: 2;
+      color: transparent; /* Start hidden */
+      text-align: center;
+      transition: color 0.5s ease;
     }
     .column-item h2 { font-size: 1em; }
     .column-item p { font-size: 0.8em; }
     /* Clickable link area */
     .item-link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 2;
-        text-decoration: none;
-        background: transparent;
-        cursor: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      text-decoration: none;
+      background: transparent;
+      cursor: none;
     }
     /* Vertical phone */
     @media (max-width: 768px) and (orientation: portrait) {
