@@ -143,26 +143,37 @@
 /* Smaller Screen */
 @media screen and (max-width: 768px) {
   .timeline {
-      max-width: 90%;
-      padding-left: 3em;
+    max-width: 90%;
+    padding: 0;
   }
 
   .project {
-      margin: 3em auto;
+    margin: 3em auto;
   }
 
   .project div {
-      width: 75%;
-      padding: 1.5em;
+    width: 100%;
+    padding: 1.3em;
   }
 
+  /* Vertical line (default) */
+  .project::before {
+    display: none;
+  }
+
+  /* Vertical line (focused) */
+  .project.focused::before {
+    display: none;
+  }
+  
   .project-dot {
-      width: 1.5em;
-      height: 1.5em;
-      font-size: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1.5em;
+    display: none;
   }
 
   .project-date, .project-description {
-      font-size: 0.9em;
+    font-size: 0.9em;
   }
 }
