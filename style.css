@@ -658,6 +658,8 @@ nav .nav-button.inactive {
     position: relative;
     box-sizing: border-box;
     width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     padding-bottom: 1.5em;
   }
   .artwork-image {
