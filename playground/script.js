@@ -4,7 +4,7 @@ const items = [
     title: "Cappriccio", 
     description: "Medium: digital", 
     category: "non-interactive", 
-    link: "cappriccio/index.html",
+    link: "cappriccio/",
     image: "cappriccio/images/cappriccio-1.jpg",
     paragraph:"Digital painting series as a study of color, lines, and textures."
   },
@@ -13,7 +13,7 @@ const items = [
     title: "Phantasmagoric", 
     description: "Medium: photography",
     category: "non-interactive", 
-    link: "phantasmagoric/index.html",
+    link: "phantasmagoric/",
     image: "phantasmagoric/images/phantasmagoric-1.png",
     paragraph:"Photography experiments to illustrate a surreal city environment."
   },
@@ -22,7 +22,7 @@ const items = [
     title: "Till Success", 
     description: "Processing in Java", 
     category: "interactive", 
-    link: "till-success/index.html",
+    link: "till-success/",
     image: "till-success/images/till-success-0.jpg",
     paragraph:"A runner + word game. The game continues until success."
   },
@@ -31,7 +31,7 @@ const items = [
     title: "Bloom", 
     description: "HTML, Javascript (p5.js & ml5 library), CSS", 
     category: "interactive", 
-    link: "bloom/index.html",
+    link: "bloom/",
     image: "bloom/images/bloom-0.jpg",
     paragraph:"An interactive art project built with p5.js and ml5.js that allows users to draw flowers on screen using hand detection (via a webcam) or mouse control."
   },
@@ -40,7 +40,7 @@ const items = [
     title: "Wanted", 
     description: "HTML, Javascript (p5.js library), CSS", 
     category: "interactive", 
-    link: "wanted/index.html",
+    link: "wanted/",
     image: "wanted/images/wanted-0.jpg",
     paragraph:"Interactive game to catch wanted animals generated through a particle system that randomly fall from top of the screen."
   },

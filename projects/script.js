@@ -5,7 +5,7 @@ const projects = [
     title: "The Lost Duckling", 
     description: "A video project following a duck bot's journey to rediscover childhood wonder and the feeling of home through a surreal arrival at night.", 
     category: "non-interactive", 
-    link: "the-lost-duckling/index.html",
+    link: "the-lost-duckling/",
     image: "https://ella-tang.github.io/portfolio/projects/the-lost-duckling/images/screenshot-1.png",
     paragraph: "Inspired by J.D. Salinger’s *The Catcher in the Rye*, the story of \"The Lost Duckling\" draws on Holden Caulfield's curiosity about the ducks in Central Park, symbolizing his yearning to preserve innocence. In a surreal exploration of memory and belonging, the duck bot finds its way to Central Park, where it encounters a yellow rubber duck—an abstract representation of childhood wonder and simplicity."
   },
@@ -14,7 +14,7 @@ const projects = [
     title: 'Forgotten Futures', 
     description: 'An interactive art project exploring technology’s impact on life and work through a dystopian lens, featuring a video introduction, Rest in Metaverse, and an immersive experience, In Memory of All the Deceased.', 
     category: 'interactive', 
-    link: 'forgotten-futures/index.html',
+    link: 'forgotten-futures/',
     image: "https://ella-tang.github.io/portfolio/projects/forgotten-futures/images/forgotten-futures-1.png",
     paragraph: "In the year 2046, a time with more advanced technologies, a capitalist-controlled Metaverse becomes the primary workplace. What is hidden inside the sugar-coated metaverse workplace is the labor exploitation that no one can escape from. People have to work day and night like hamsters on a perpetual wheel to sustain themselves. <br><br> As work takes over life, social relationships of people are built more based on virtual identities, and their real-world identities gradually diminish. As a result, death is no longer the end of biological life, but rather the moment when a person's real-world identity is entirely replaced by their virtual identities."
   },
@@ -23,7 +23,7 @@ const projects = [
     title: 'Wishes Come True', 
     description: 'An interactive art project that invites people to make a wish through a digital candle and a computer.', 
     category: 'interactive', 
-    link: 'wishes-come-true/index.html',
+    link: 'wishes-come-true/',
     image: "https://ella-tang.github.io/portfolio/projects/wishes-come-true/images/wishes-come-true-1.jpg",
     paragraph: "An interactive art project that invites audiences to make a wish through a digital candle and a computer. After thinking about a wish in deep heart or typing out a wish on computer, audiences can blow out the candle and would receive the best of luck. Wishes are not just on birthdays but everyday. :)"
   },
