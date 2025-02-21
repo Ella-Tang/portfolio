@@ -242,6 +242,9 @@
   </div>
   <!-- Script -->
   <script src="../../script.js"></script>
+  <script>
+    if (window.location.pathname.endsWith("index.html")) window.history.replaceState(null, "", window.location.pathname.replace("index.html", ""));
+  </script>
 </body>
 
 <footer class="footer">
