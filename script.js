@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (isStudioPage) { renderProjectDetails(artworks); } 
   else if(isProjectsPage) { renderProjectDetails(projects); } 
   else if(isPlaygroundPage) { renderProjectDetails(items); }
+  if (window.location.pathname.endsWith("index.html")) {
+    window.history.replaceState(null, "", window.location.pathname.replace("index.html", ""));
+  }
 });
 
 function hideOriginalCursor() {
