@@ -11,6 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
   else if(isPlaygroundPage) { renderProjectDetails(items); }
 });
 
+if (window.location.pathname.endsWith("index.html")) {
+  window.location.replace(window.location.pathname.replace("index.html", ""));
+}
+
+(function() {
+  let link = document.createElement("link");
+  link.rel = "icon";
+  link.type = "image/png";
+  link.href = "/favicon.png";
+  document.head.appendChild(link);
+})();
+
 function hideOriginalCursor() {
   document.body.style.cursor = "none";
   document.querySelectorAll("*").forEach((e) => { e.style.cursor = "none"; });
