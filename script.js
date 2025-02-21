@@ -3,6 +3,10 @@ const isProjectsPage = window.location.pathname.includes("projects");
 const isPlaygroundPage = window.location.pathname.includes("playground");
 const isAboutPage = window.location.pathname.includes("about");
 
+if (window.location.pathname.endsWith("index.html")) {
+  window.location.replace(window.location.pathname.replace("index.html", ""));
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   setupCustomCursor();
   typeHeaderText();
