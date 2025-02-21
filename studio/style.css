@@ -1,14 +1,12 @@
 /* ------------- Main grid------------- */
 .center-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
 .studio-container {
   width: 90%;
-  margin-top: 1em auto; 
+  padding-top: 2em; 
+  margin: 0 auto;
 }
 
 .artwork-grid {
@@ -168,8 +166,7 @@ h1 {
 /* Responsive Design for Tablets */
 @media (max-width: 768px) {
   .center-wrapper {
-    padding: 2em 0; 
-    margin-top: 1em;
+    margin: 1em auto;
   }
 
   .artwork-grid {
@@ -223,6 +220,7 @@ h1 {
 @media (max-width: 480px) {
   .studio-container {
     width: 90%;
+    padding-top: 1em;
   }
 
   .gallery-container {
