@@ -221,24 +221,39 @@
         <!-- Profile Photo -->
         <img src="../about/photo.jpg" alt="Ella Tang" class="profile-photo">
         <!-- Description -->
-        <p>Hello! I’m Ella Tang, a creative technologist based in New York.
-           I'm currently a fourth-year undergraduate student at NYU Tisch School of the Arts, majoring in Interactive Media Arts.
-           This website is a work of mine, curating my recent works in three digital spaces: Studio, Projects, Playground. 
-        </p>
+        <p id="datetime" class="datetime"></p>
+        <script>
+          function updateDateTime() {
+            const now = new Date();
+            const options = {
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric',
+              hour: '2-digit',
+              minute: '2-digit',
+              second: '2-digit',
+            };
+            document.getElementById('datetime').textContent = `It's ${now.toLocaleDateString(undefined, options)}. Thanks for stopping by :)`;
+          }
+          updateDateTime();
+          setInterval(updateDateTime, 1000);
+        </script>
+        <p>If you're curious about who I am and what I do... I'm Ella Tang. Just a human figuring things out with colors, pixels, and a bit of chaos.</p>
+        <p>Espresso first, glass later, art all the time. Wanna grab a drink or talk about art? Reach me at: tangjiayun45@gmail.com</p>
       </section>
       <!-- Contact section -->
-      <section class="contact-container">
-        <div class="contact">
+      <!-- <section class="contact-container"> -->
+        <!-- <div class="contact">
           <h2>Contact</h2>
           <p>jt3908@nyu.edu</a></p>
-        </div>
-        <div class="follow">
+        </div> -->
+        <!-- <div class="follow">
           <h2>Follow</h2>
           <p class="cursor-element"><a href="https://www.instagram.com/ellaaaaaaatang/" target="_blank">Instagram</a></p>
           <p class="cursor-element"><a href="https://www.linkedin.com/in/ella-tang-a08274273/" target="_blank">LinkedIn</a></p>
           <p class="cursor-element"><a href="https://github.com/Ella-Tang" target="_blank">GitHub</a></p>
         </div>
-      </section>
+      </section> -->
     </div>
   </div>
   <!-- Script -->
